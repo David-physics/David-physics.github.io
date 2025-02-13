@@ -1,0 +1,2243 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        
+            <meta charset="utf-8">
+            <meta name="robots" content="noindex">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="author" content="None" />
+            <meta name="date" content="2025-02-13" />
+        
+
+        <title>document | </title>
+
+        
+    
+    
+            <link rel="stylesheet" href="static/styles.css?build_time=1739473912.8061">
+            
+            
+        
+    <link rel="stylesheet" id="customiseCodeCSS" href="static/pygmentize.css?build_time=1739473912.8061">
+
+    <link rel="stylesheet" href="static/print.css?build_time=1739473912.8061">
+
+
+        
+    
+			<script>
+				var chirun_static_url = new URL('static?build_time=1739473912.8061', location.href);
+			</script>
+
+            
+                <script defer src="static/mathjax_config.js?build_time=1739473912.8061"></script>
+                <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            
+
+            <script type="module" src="static/localisation.js?build_time=1739473912.8061"></script>
+
+            <script defer src="static/customisation.js?build_time=1739473912.8061"></script>
+
+            
+
+            
+        
+    <script defer src="static/code.js?build_time=1739473912.8061" type="module"></script>
+    <script defer src="static/embed_numbas.js?build_time=1739473912.8061" type="module"></script>
+    <script defer src="static/embed_qrcode.js?build_time=1739473912.8061" type="module"></script>
+
+
+        <template id="runnable-code-template">
+            <link rel="stylesheet" href="static/code.css?build_time=1739473912.8061">
+            <div class="runnable-code-wrapper">
+                <section class="fullscreenable code">
+                    <div id="code"></div>
+                    <button class="fullscreen icon-button" title="Fullscreen code"><svg class="icon" aria-label="Fullscreen code" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <section class="fullscreenable output">
+                    <div id="output" aria-live="polite">
+                        <pre class="stdout"></pre>
+                        <pre class="result"></pre>
+                        <div class="images"></div>
+                    </div>
+                    <button class="fullscreen icon-button" title="Fullscreen output"><svg class="icon" aria-label="Fullscreen output" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <div class="buttons">
+                    <button type="button" class="run-code">Run code</button>
+                </div>
+                <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:var(--bg-colour);fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:var(--bg-colour);fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:var(--bg-colour);stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+            </div>
+        </template>
+
+        <template id="embed-numbas-template">
+            <link rel="stylesheet" href="static/embed_numbas.css?build_time=1739473912.8061">
+            <details id="wrapper" data-completion-status="incomplete">
+                <summary>
+                    <h1 id="title">Test Yourself</h1>
+                    <div id="completion-status" data-completion-status="unknown">
+                        <span class="complete">Complete</span>
+                        <span class="incomplete">Incomplete</span>
+                    </div>
+                    <label id="score-feedback">
+                        Score:
+                        <progress min="0"></progress>
+                    </label>
+                </summary>
+                <iframe class="embed" title="Numbas"></iframe>
+            </details>
+        </template>
+
+    </head>
+    <body class="" >
+        
+
+        <a class="skip-to-content-link" href="#main-content">Skip to content</a>
+        
+            <form id="display-options">
+    <div class="buttons">
+        <button type="button" id="reset-display-options">Reset to defaults</button>
+
+        <a href="https://chirun.org.uk/accessibility-statement/material">Accessibility statement</a>
+
+        <button type="button" aria-controls="display-options" aria-expanded="false">
+            Close
+        </button>
+    </div>
+
+    <div class="inputs">
+        <div class="input-group">
+            <label for="display-options-font-scale">
+                Text size
+            </label>
+            <input type="range" min="50" max="600" step="5" value="100" id="display-options-font-scale">
+            <output for="display-options-font-scale">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-spacing-factor">
+                Spacing
+            </label>
+            <input type="range" min="0" max="1200" step="5" value="100" id="display-options-spacing-factor">
+            <output for="display-options-spacing-factor">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-font-family">
+                Text font
+            </label>
+            <select id="display-options-font-family">
+                <option value="var(--sans-serif-font)" selected>Sans-serif</option>
+                <option value="var(--serif-font)">Serif</option>
+                <option value="Atkinson Hyperlegible">Atkinson Hyperlegible</option>
+                <option value="Comic Sans MS">Comic Sans</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-colour-scheme">
+                Colour scheme
+            </label>
+            <select id="display-options-colour-scheme">
+                <option value="auto" selected>Automatic (default)</option>
+                <option value="light">Black text on white</option>
+                <option value="dark">White text on black</option>
+                <option value="custom">Custom</option>
+            </select>
+        </div>
+
+        <section id="custom-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-text-colour">
+                    Text colour
+                </label>
+                <input type="color" value="#000000" id="display-options-text-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-link-colour">
+                    Link colour
+                </label>
+                <input type="color" value="#0000ee" id="display-options-link-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour">
+                    Background colour
+                </label>
+                <input type="color" value="#ffffff" id="display-options-bg-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-off">
+                    Muted background colour
+                </label>
+                <input type="color" value="#eeeeee" id="display-options-bg-colour-off">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-1">
+                    Accent colour 1
+                </label>
+                <input type="color" value="#4caf50" id="display-options-bg-colour-accent-1">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-2">
+                    Accent colour 2
+                </label>
+                <input type="color" value="#f6f6ff" id="display-options-bg-colour-accent-2">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-3">
+                    Accent colour 3
+                </label>
+                <input type="color" value="#eeffd3" id="display-options-bg-colour-accent-3">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-4">
+                    Accent colour 4
+                </label>
+                <input type="color" value="#ffeeee" id="display-options-bg-colour-accent-4">
+            </div>
+        </section>
+
+        <section id="filter-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-filter-sepia">
+                    Sepia filter
+                </label>
+                <input type="range" min="0" max="100" step="1" value="0" id="display-options-filter-sepia">
+                <output for="display-options-filter-sepia">0%</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-filter-hue-rotate">
+                    Rotate hues
+                </label>
+                <input type="range" min="0" max="1" step="0.01" value="0" id="display-options-filter-hue-rotate">
+                <output for="display-options-filter-hue-rotate">0 turns</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-invert-images">
+                    Invert images in dark mode
+                </label>
+                <input type="checkbox" id="display-options-invert-images">
+            </div>
+
+        </section>
+    </div>
+</form>
+        
+
+        <header>
+            
+<button class="icon-button" type="button" aria-controls="display-options" aria-expanded="false" title="Display options">
+    <svg class="icon" aria-label="Display options" viewBox="0 0 180 180">
+    <use href="#cog"/>
+</svg>
+</button>
+            
+    
+
+            
+            
+        </header>
+
+        <main id="main-content">
+            
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
+            
+            <li><a rel="alternate" type="application/pdf" href="document.pdf"download><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#a0000000002">1 Crystals, Lattices and Waves</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000004">1.1 Crystal Structures</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000006">1.2 Waves in Crystals</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000012">2 Crystal Structure</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000013">2.1 The Bravais Lattice</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000017">2.2 Primitive Lattice Vectors</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000027">2.3 The Unit Cell</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000030">3 Lattice Planes</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000031">3.1 Planes/Lines in Two Dimensions Lattices</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000032">Separation of Lines in Two Dimensions</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000046">3.2 Lattice Planes in Three Dimensions</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000048">3.3 Lattice Planes and Diffraction</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000055">4 The Reciprocal Lattice</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000056">4.1 Diffraction and the Fourier Transform</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000067">4.2 The Fourier Series and Fourier Transform</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000080">4.3 The Reciprocal Lattice</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000101">4.4 A more general expression for the Reciprocal Lattice</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000114">4.5 Examples of Reciprocal Lattices</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000133">4.6 The Reciprocal Lattice and Real Space Lattice Planes</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000151">4.7 The Reciprocal Lattice and Diffraction</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000173">4.8 Reciprocal Lattice Summary</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000180">5 More about Diffraction</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000181">5.1 The Basis</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000192">5.2 Finite Structures</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+        
+<section class="section">
+<h2 id="a0000000002">1 Crystals, Lattices and Waves</h2>
+<div class="centered"> <div class="mbox" id="a0000000003" style="width: "> <img alt="\includegraphics[width=0.6\textwidth ]{./figures/quartz.jpg}" src="images/img-0001.jpg" style="width:281.853pt"/> </div> </div>
+<p>
+  Natural quartz crystals <br/>(By Didier Descouens - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=9065051). 
+</p>
+<p>
+People have long been fascinated by the physical qualities of crystals. From a scientific point of view, their regular faces and angles hint at something fundamental. However, it is only with the development of X-ray crystallography that we have been able to study the atomic-scale structure which leads to this regularity. We know that (idealised) crystals are three-dimensional periodic lattices of atoms, with periodicity typically on the scale of nanometers. 
+</p>
+<p>
+Naturally occuring mineral crystals generally form as molten material solidifies or solids precipitate from solution. The ordering process takes time, so the formation of big crystals, such as the quartz (SiO\(_2\)) crystals shown above, require the process to occur very slowly, over thousands of years, allowing the atoms or molecules to find the right sites in the structure to add to the crystal. If the cooling or precipitation is speeded up, we get lots of small crystals forming and growing simultaneously, producing a polycrystalline material. At even higher rates, the crystal structure disappears altogether, and we get much less ordered amorphous materials called glasses – window glass is also (mainly) SiO\(_2\), but in amorphous form. 
+</p>
+<p>
+The differences between quartz and window glass, in their mechanical, optical and electrical properties, shows the profound importance of the crystalline lattice structure in determining the properties of materials. The microscopic structure of a material is, not surprisingly, important in how it responds to applied forces. The regularity of the lattice also affects the way electrons move in it, creating energy bands with band-gaps. This is key to understanding the electrical and optical properties. 
+</p>
+<section class="subsection">
+<h3 id="a0000000004">1.1 Crystal Structures</h3>
+<p>
+The structure of the lattice varies between different compounds. Accurately predicting the structure requires sophisticated (computational) quantum mechanical calculations. The structure is mainly determined by minimising the total energy, though entropy can play a role at finite temperatures (there can be multiple phases with different lattice structures depending on temperature and pressure). We can say a few things based on the sort of bonding which occurs. Electrostatic forces are generally non-directional, so where these dominate, in ionic solids (with attracting negative and positive ions) and metals (with positive ions in a sea of electrons), we can minimise energy by packing in the atoms as close together as possible. A fairly good model then is to treat atoms as hard spheres (they cannot overlap much as there are also strong repulsive forces at short range). Then we can make predictions about structure by looking at configurations which pack the spheres as closely together as possible. 
+</p>
+<div class="centered"> <img alt="\includegraphics[width=0.35\textwidth ]{./figures/3d-fcc-spheres-layer1.png}" src="images/img-0002.png" style="width:164.41424999999998pt"/> <span class="hspace" style="width: -21.680999999999997pt"></span> <img alt="\includegraphics[width=0.35\textwidth ]{./figures/3d-fcc-spheres-layer2.png}" src="images/img-0003.png" style="width:164.41424999999998pt"/> <span class="hspace" style="width: -21.680999999999997pt"></span> <img alt="\includegraphics[width=0.35\textwidth ]{./figures/3d-fcc-spheres-layer3.png}" src="images/img-0004.png" style="width:164.41424999999998pt"/> </div>
+<p>
+<span class="vspace" style="height: -36.135pt"></span>
+</p>
+<div class="centered"><p>
+<img alt="\includegraphics[width=0.35\textwidth ]{./figures/3d-fcc-spheres-general.png}" src="images/img-0005.png" style="width:164.41424999999998pt"/> <span class="hspace" style="width: -21.680999999999997pt"></span> <img alt="\includegraphics[width=0.3\textwidth ]{./figures/3d-fcc-spheres-cube.png}" src="images/img-0006.png" style="width:140.9265pt"/> <span class="hspace" style="width: 21.680999999999997pt"></span> <img alt="\includegraphics[width=0.3\textwidth ]{./figures/3d-fcc-simple.png}" src="images/img-0007.png" style="width:140.9265pt"/>
+</p>
+</div>
+<p>
+If we look at the first layer, the closest packing clearly occurs when we have a hexagonal arrangement - each atom surrounded by 6 others. Putting another layer on top, they are most densely packed when each second layer atom sits on a triangle of first layer atoms. This gives us two sets of sites for the second layer, but we have to chose one. This choice is arbitrary. For the third layer, we then have to make another arbitrary choice. If we chose to put them above the first layer sites we did not use for the second layer, we get the structure shown. It is quite hard to see, but by looking at a different angle, we can identify a lattice of cubes, with an extra atom at the centre of each face. This structure is known as a <em>face centred cubic lattice</em>, often abbreviated to FCC. The last part of the figure shows one of these cubes, with the same colouring as the layers in the stacking pictures, with full size spheres and then with smaller spheres. Note that there are a total of four atoms per cube – the corner and face atoms are shared with adjacent cubes. 
+</p>
+<p>
+We would get the same close packing if we chose the other sites for the third layer, directly above the first layer. That gives a different structure, <em>hexagonal close packed</em> or HCP. Both have the same filling factor, the fraction of the volume filled by the spheres, which is \(\sim 0.74\). The rest of the volume is the space between the spheres. This is the highest filling factor that can be achieved when packing equal-sized spheres in three dimensions. 
+</p>
+<p>
+Although this is a very simple model, it works well for a lot of metals. Aluminium, calcium, nickel, gold and copper all have FCC structures (at room temperature and atmospheric pressure), while magnesium, titanium, cobalt and zinc are HCP. However, other metals, such as lithium, sodium, potassium and iron have a different cubic structure, called <em>body centred cubic</em>, consisting of a cube with an extra atom at its centre. Although this has a lower filling factor \(\sim 0.68\), it is preferred for these elements – clearly packing is not the full story. In ionic compounds, where there are atoms of different sizes, the packing problem becomes more complicated, but it still can yield sensible predictions which depend on the relative sizes. 
+</p>
+<p>
+<span class="vspace" style="height: -14.454pt"></span>
+</p>
+<div class="centered"> <div class="mbox" id="a0000000005" style="width: "> <img alt="\includegraphics[width=0.55\textwidth ]{./figures/3d-diamond.png}" src="images/img-0008.png" style="width:258.36525pt"/> </div> </div>
+<p>
+<span class="vspace" style="height: -36.135pt"></span>
+</p>
+<p>
+Close packing is not the important consideration in covalently bonded materials. An example is diamond, where the each carbon atom can form only four bonds. This favours an arrangement where every atom has four nearest neighbours, arranged at the verticies of a regular tetrahedron (to minimise electrostatic interactions between the bonding electrons). In the FCC and HCP structures, each atom has 12 nearest neighbours (8 in BCC), so they are not going to work for diamond. The actual diamond structure consists of a face centred cubic arrangement, with four extra atoms within the cube (the red atoms in the figure). You can see the tetrahedral arrangement of the surrounding atoms, with red lines indicating the four covalent bonds. Although this has a much lower filling factor, \(\sim 0.34\), than FCC and HCP structures, covalently bonded materials do not care about packing – they need to have the right number of neighbours in the right directions. 
+</p>
+</section><section class="subsection">
+<h3 id="a0000000006">1.2 Waves in Crystals</h3>
+<p>
+One of the aims of this course is to learn how waves diffract from crystalline structures. This happens because of the periodic character of the crystal structure, which makes it act like a two- or three-dimensional version of a diffraction grating. There is an incident wave, with wavevector \(\mbox{$\bm {k}$}_{\rm in}\) and, if diffraction occurs, one or more outgoing waves with wavevectors \(\mbox{$\bm {k}$}_{\rm out}\), in different directions to \(\mbox{$\bm {k}$}_{\rm in}\). Diffraction is an elastic process, with no energy transferred to the crystal, so the frequencies of the incident and outgoing waves will be the same, and hence \(|\mbox{$\bm {k}$}_{\rm in}|=|\mbox{$\bm {k}$}_{\rm out}|\). Of course, inelastic scattering may also occur, but we do not call that diffraction. Waves can also scatter off amorphous solids, but then the outgoing wave can be in any direction. However, even small amounts of local order can give rise to some diffractive effects. 
+</p>
+<p>
+There are a number of different sorts of waves which have interesting diffraction properties, including both electromagnetic and matter waves. These include X-rays, electrons, neutrons, and acoustic waves. In all cases, diffraction can only occur when the wavelength is comparable to, or smaller than, the period of the lattice, which in typical crystalline solids is \(\sim 10^{-1}\)nm. For electromagnetic waves, the wavelength, \(\lambda \), is related to the photon energy, \(E\), by 
+</p>
+<div id="a0000000007">
+<div class="eqnarrayid" id="a0000000008"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{1.1} E=h \nu = \frac{h c}{\lambda }\; , 
+\end{align}
+</script>
+</div>
+<p>
+ where \(h\) is Planck’s constant and \(c\) the speed of light. To obtain wavelengths \(~ \sim 10^{-1}\)nm we require photons with energies \(\sim 10^4\)eV. For matter waves, we use the de Broglie formula \(p=h/\lambda \) to relate the wavelength to the momentum. Then, non-relativistically, the kinetic energy is 
+</p>
+<div id="a0000000009">
+<div class="eqnarrayid" id="a0000000010"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{1.2} E=\frac{p^2}{2m}=\frac{h^2}{2m \lambda ^2}\; , 
+\end{align}
+</script>
+</div>
+<p>
+ where \(m\) is the particle mass. To get \(\lambda ~  \sim 10^{-1}\)nm requires energies \(\sim 10^2\) eV for electrons and \(10^{-1}\) eV for neutrons. 
+</p>
+<p>
+The regime we will be mainly considering is when the wavelength and period are comparable, and we get at most a few diffracted waves. When the wavelength is much less than the period, there are many diffracted waves and we are doing something more like imaging. Suppose a simple diffraction grating had a slit separation of millimetres, so thousands of orders of diffraction occur with light, in an almost continuous set of directions. With a lens (in our eyes) we can form an image of the grating. Something similar occurs for crystal diffraction when the wavelength is very short – the only problem is the difficulty of making lenses. This is not possible for X-rays or neutrons. For electrons, lenses can be made, but only recently have they been good enought to image atoms. Now we can image thin samples, such as graphene, with similar resolution to scanning microscopy, such as atomic force microscopy (AFM). 
+</p>
+<div class="centered"> <img alt="\includegraphics[width=0.46\textwidth ]{./figures/hrtem-graphene.jpg}" src="images/img-0009.jpg" style="width:216.0873pt"/> <span class="hspace" style="width: 36.135pt"></span> <img alt="\includegraphics[width=0.35\textwidth ]{./figures/afm-gold.jpg}" src="images/img-0010.jpg" style="width:164.41424999999998pt"/> </div>
+<p>
+ The left hand figure shows a high resolution transmission electron microscope image of a graphene bilayer structure. The individual atoms can be seen. On the right is an AFM image of a surface of gold, where the layers we met in the close packed structure are visible. 
+</p>
+<p>
+Diffraction from crystals was first observed using X-rays, in experiments which provided the first direct proof of the periodic structure of crystals. X-rays scatter off electric charges, so they probe the charge density in the crystal, of both electrons and nuclei. The interaction is weak, so X-rays can pass through bulk materials, making them good for determining the bulk crystal structure. Most of the information we have about crystal structure comes from X-ray diffraction measurements. X-ray crystallography is an important tool in biochemistry, where they it is used to determine the structure of molecules such as proteins.  
+</p>
+<div class="centered"> <div class="mbox" id="a0000000011" style="width: "> <img alt="\includegraphics[width=0.6\textwidth ]{./figures/protein.jpg}" src="images/img-0011.jpg" style="width:281.853pt"/> </div> </div>
+<p>
+  The figure shows the structure of a molecule called the Bcl-2 regulatory protein, determined by X-ray crytallography. The protein is a long polymer (proteins typically contain of \(10^4-10^5\) atoms) which folds up (at multiple levels) into a complex three-dimensional structure. It is important to be able to find this structure, as it determines the biological function of the protein. To carry out crytallography, the molecule is crystallized into a periodic structure consisting of repeats of the folded molecule. With measurements of multiple diffraction directions, a detailed picture of the structure can be reconstructed computationally. 
+</p>
+<p>
+For electron diffraction, the regime where \(\lambda \sim 10^{-1}\)nm and \(E \sim 100\)eV is referred to as low energy electron diffraction (LEED). Like X-rays, electrons interact with the charge density in a crystal, but their interaction is much stronger, so they can only pass through very thin samples. LEED is a good tool for looking at the structure of surfaces, which can be different from the bulk lattice, a phenomenon known as surface reconstruction. The strong interaction means that multiple scattering is typical, with the electron being diffracted more than once in its interaction with the lattice. This complicates the process of computing the structure from the diffraction pattern. 
+</p>
+<p>
+Of course, electrons also interact with crystal structure in a very different way, as there will always be electrons moving within the crystal. These trapped electrons will definitely diffract multiple times from the lattice, and it is this process which leads to the formation of the electronic bandstructure in a crystal. 
+</p>
+<p>
+Neutron diffraction is also an important tool for probing crystal lattices. They interact weakly, so, like X-rays, they penetrate the bulk of a structure. The interaction is just with the atomic nuclei, rather than the charge density, so they form a different ‘view’ of a structrure. The scattering is also sensititive to magentic fields, so they can probe the magnetic structure of materials such as antiferromagnets. The main difficulty with neutron crystallography is the need for a nuclear reactor, which requires specialist facilities. We typically want very low energy neutrons, \(\sim 10^{-1}\) eV, so the MeV energy neutrons emerging from the reactor need to be slowed (and collimated) for experiments. 
+</p>
+<p>
+Although the wavelength of visible light is much too long to observe diffraction from atomic lattices, we can make artificial two- and three-dimensional structures which act in a similar way. These are important in semiconductor optics, because they can control the way light interacts with the matrial. The light scatters due to variations in the dielectric constant in the structure, and this interaction can be made strong, so that multiple scattering occurs. This leads to bandstructure for the light, in analogy to the electronic bandstructure in atomic crystals. In a band-gap, light cannot propagate within the crystal. 
+</p>
+<div class="centered"> <img alt="\includegraphics[width=0.52\textwidth ]{./figures/2d-photonic.png}" src="images/img-0012.png" style="width:244.2726pt"/> <span class="hspace" style="width: 21.680999999999997pt"></span> <img alt="\includegraphics[width=0.3\textwidth ]{./figures/3d-photonic.jpg}" src="images/img-0013.jpg" style="width:140.9265pt"/> </div>
+<p>
+ The figures show a two-dimensional photonic crystal made from indium phosphide and a three-dimensional silicon structure. They are scanning electron microscope (SEM) images. Both these materials have quite large dielectric constants, so the scattering of light from the air holes is strong. These structures are actually made for infra-red light rather than optical wavelengths, which would require somewhat smaller periods. 
+</p>
+<p>
+In this course, we will only consider lattices which are infinite (in the appropriate dimensions). Real structures, are, of course, finite, but we will assume that they are large enough that their properties are similar to the infinite case. We will also consider only perfect structures. Real crystals are never perfect: they contain all sorts of defects, such as impurities, vacancies and dislocations. We will not consider the effects of multiple scattering, though this does not change the directions of the diffracted peaks, only their intensities. 
+</p>
+<p>
+<br/>
+</p>
+</section>
+</section><section class="section">
+<h2 id="a0000000012">2 Crystal Structure</h2>
+<section class="subsection">
+<h3 id="a0000000013">2.1 The Bravais Lattice</h3>
+<p>
+We have seen that the defining property of a crystal lattice is that it is periodic: it repeats in space. This means that there is an (infinite) set of points at which the lattice looks exactly the same. We describe this as a <em>discrete translational symmetry</em>. It is translational because the operation which leaves the lattice unchanged is a spatial translation. It is discrete because we have to translate through finite displacements to get between the points where the lattice looks the same. We call the vectors which produce these translations <em>lattice vectors</em>. Thus the points where the lattice looks the same as a given starting point is defined by the set of lattice vectors. We call the set of points a <em>Bravais lattice</em>. 
+</p>
+<div class="centered"> <div class="mbox" id="a0000000014" style="width: "> <img alt="\includegraphics[width=0.8\textwidth ]{./figures/lattice-basis-square.png}" src="images/img-0014.png" style="width:375.80400000000003pt"/> </div> </div>
+<p>
+The Bravais lattice tells us about the translational symmetry of the lattice. To that, we have to add a description of all the atoms etc which surround each point in the Bravais lattice. This is known as the <em>basis</em>. The Bravais lattice plus the basis gives the crystal structure. 
+</p>
+<div class="centered"> <div class="mbox" id="a0000000015" style="width: "> <img alt="\includegraphics[width=0.8\textwidth ]{./figures/lattice-basis-image.png}" src="images/img-0015.png" style="width:375.80400000000003pt"/> </div> </div>
+<p>
+We can think of this pictorially, as in the first example, but it also can be given a more mathematical description. We may, for example, want to describe the (periodic) charge density, \(\rho (\mbox{$\bm {r}$})\) in a crystal, by repeating periodically the charge density surrounding each point in the Bravais lattice. Recall from Fourier theory that we can create multiple copies of a function by convolving it with a set of Dirac delta functions. We can thus write 
+</p>
+<div id="eq:convolve">
+<div class="eqnarrayid" id="a0000000016"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{2.1} \rho (\mbox{$\bm {r}$})= \rho _{\rm basis}(\mbox{$\bm {r}$}) * \sum _i \delta ^3(\mbox{$\bm {r}$}-\mbox{$\bm {r}$}_i)\; , \label{eq:convolve} 
+\end{align}
+</script>
+</div>
+<p>
+ where \(\rho _{\rm basis}(\mbox{$\bm {r}$})\) describes the basis and the \(\mbox{$\bm {r}$}_i\) are the points in the Bravais lattice. 
+</p>
+</section><section class="subsection">
+<h3 id="a0000000017">2.2 Primitive Lattice Vectors</h3>
+<div class="centered"> <div class="mbox" id="a0000000018" style="width: "> <img alt="\includegraphics[width=0.35\textwidth ]{./figures/plvs-2d.png}" src="images/img-0016.png" style="width:164.41424999999998pt"/> </div> </div>
+<p>
+The figure above shows a section of a square Bravais lattice in two-dimensions. Each lattice vector (point) can be constructed out of two <em>primitive lattice vectors</em>, \(\mbox{$\bm {a}$}_1\) and \(\mbox{$\bm {a}$}_2\). There would be three in three-dimensions. Formally, the lattice vectors are written 
+</p>
+<div id="a0000000019">
+<div class="eqnarrayid" id="a0000000020"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{2.2} \mbox{$\bm {R}$}=n_1 \,  \mbox{$\bm {a}$}_1 + n_2 \,  \mbox{$\bm {a}$}_2\; , 
+\end{align}
+</script>
+</div>
+<p>
+ where \(n_1\) and \(n_2\) are integers, which can be negative as well as positive. The choice of lattice vectors is not unique – there are an infinite number of possiblities. However, there are some normal choices for particular lattices, trying to make the vectors as short as possible, orthogonal (which makes lots of the later maths simpler) and symmetric. 
+</p>
+<div class="centered"> <img alt="\includegraphics[width=0.3\textwidth ]{./figures/2d-oblique.png}" src="images/img-0017.png" style="width:140.9265pt"/> <span class="hspace" style="width: 18.0675pt"></span> <img alt="\includegraphics[width=0.3\textwidth ]{./figures/2d-rectangular.png}" src="images/img-0018.png" style="width:140.9265pt"/> <span class="hspace" style="width: 18.0675pt"></span> <img alt="\includegraphics[width=0.3\textwidth ]{./figures/2d-centred-rectangular.png}" src="images/img-0019.png" style="width:140.9265pt"/> <br/><span class="vspace" style="height: 21.680999999999997pt"></span> <img alt="\includegraphics[width=0.3\textwidth ]{./figures/2d-hexagonal.png}" src="images/img-0020.png" style="width:140.9265pt"/> <span class="hspace" style="width: 18.0675pt"></span> <img alt="\includegraphics[width=0.3\textwidth ]{./figures/2d-square.png}" src="images/img-0021.png" style="width:140.9265pt"/> </div>
+<p>
+<span class="vspace" style="height: -7.227pt"></span> The most general lattice type in two dimensions is the oblique lattice, where the two primitive lattice vectors have different lengths, and there is an arbitrary angle between them. There are four more two dimensional lattices, which are special cases of the oblique, where the value of the angle or the lengths of the vectors increases the amount of symmetry. The oblique lattice has a two-fold rotation symmetry: it looks the same if rotated through \(180^\circ \). The rectangular and centred-rectangular lattices also have two-fold rotation symmetry, but they also have two mirror planes: when reflected about a vertical or horizontal lattice plane, they look the same. The hexagonal lattice has six-fold rotation symmetry and six mirror planes, while the square lattice has four of each. The figures show the conventional choice of primitive lattice vectors for each type of lattice. However, the centred rectangular lattice is often treated as simple rectangular with the basis modified to include the additional site at the centre of the rectangle. 
+</p>
+<p>
+The symmetry of the Bravais lattice does not give a full classification of crystal symmetries. We also have to consider the symmetry of the basis which we add to it. Clearly, adding a basis cannot increase the amount of symmetry we start from with the Bravais lattice, but it can reduce it. When we take this into account, there are 17 possible symmetries for two dimensional crystals (these are known as <em>space groups</em>). By contrast, in three dimensions there are 14 Bravais lattice symmetries and 230 space groups. If we could make four dimensional crystals there would be 64 Bravais lattices and 4895 space groups. 
+</p>
+<p>
+In three dimensions the three primitive lattice vectors form a parallelepiped. The most general case is the triclinic lattice, where lattice vectors have different lengths and the angles between them are all different. There are thirteen other Bravais lattices, special cases with higher symmetry. We will only consider a few important cases here. 
+</p>
+<div class="centered"> <img alt="\includegraphics[width=0.35\textwidth ]{./figures/3d-cubic.png}" src="images/img-0022.png" style="width:164.41424999999998pt"/> <span class="hspace" style="width: -21.680999999999997pt"></span> <img alt="\includegraphics[width=0.35\textwidth ]{./figures/3d-bcc.png}" src="images/img-0023.png" style="width:164.41424999999998pt"/> <span class="hspace" style="width: -21.680999999999997pt"></span> <img alt="\includegraphics[width=0.35\textwidth ]{./figures/3d-fcc.png}" src="images/img-0024.png" style="width:164.41424999999998pt"/> </div>
+<p>
+<span class="vspace" style="height: -14.454pt"></span>
+</p>
+<p>
+In the simple cubic lattice we chose primitive lattic evectors 
+</p>
+<div id="a0000000021">
+<div class="eqnarrayid" id="a0000000022"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{2.3} \mbox{$\bm {a}$}_1=a\,  \hat{\bm x} \qquad \mbox{$\bm {a}$}_2=a\,  \hat{\bm y} \qquad \mbox{$\bm {a}$}_3=a\,  \hat{\bm z} 
+\end{align}
+</script>
+</div>
+<p>
+ In the BCC lattice, the normal choice of primitive lattice vectors is 
+</p>
+<div id="a0000000023">
+<div class="eqnarrayid" id="a0000000024"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{2.4} \mbox{$\bm {a}$}_1=\frac{a}{2}(-\hat{\bm x}+\hat{\bm y}+\hat{\bm z}) \qquad \mbox{$\bm {a}$}_2=\frac{a}{2}(\hat{\bm x}-\hat{\bm y}+\hat{\bm z}) \qquad \mbox{$\bm {a}$}_3=\frac{a}{2}(\hat{\bm x}+\hat{\bm y}-\hat{\bm z}) \; , 
+\end{align}
+</script>
+</div>
+<p>
+ while in the FCC lattice, the normal choice is 
+</p>
+<div id="a0000000025">
+<div class="eqnarrayid" id="a0000000026"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{2.5} \mbox{$\bm {a}$}_1=\frac{a}{2}(\hat{\bm y}+\hat{\bm z}) \qquad \mbox{$\bm {a}$}_2=\frac{a}{2}(\hat{\bm x}+\hat{\bm z}) \qquad \mbox{$\bm {a}$}_3=\frac{a}{2}(\hat{\bm x}+\hat{\bm y}) \; . 
+\end{align}
+</script>
+</div>
+<p>
+ However, as in the case of the centred rectangular lattice in two dimensions, it is conventional to treat the BCC and FCC lattices as simple cubic lattices with extra lattice points in the basis. The advantages of having orthogonal lattice vectors outweighs the disadvantages of dealing with a more complicated basis. 
+</p>
+</section><section class="subsection">
+<h3 id="a0000000027">2.3 The Unit Cell</h3>
+<p>
+A <em>unit cell</em> is defined as any shape which can, when repeated (tessalated), cover the lattice. The shape will be a polygon in two-dimensions and a polyhedron in three. The tessalation must fill the space with no gaps and have a fixed relationship with the lattice points, that is, they must be located at the same point in each cell. 
+</p>
+<div class="centered"> <img alt="\includegraphics[width=0.31\textwidth ]{./figures/2d-square-simple.png}" src="images/img-0025.png" style="width:145.62405pt"/> <span class="hspace" style="width: 7.227pt"></span> <img alt="\includegraphics[width=0.31\textwidth ]{./figures/2d-oblique-simple.png}" src="images/img-0026.png" style="width:145.62405pt"/> <span class="hspace" style="width: 7.227pt"></span> <img alt="\includegraphics[width=0.31\textwidth ]{./figures/2d-oblique-rectangle.png}" src="images/img-0027.png" style="width:145.62405pt"/> </div>
+<p>
+A unit cell is said to be <em>primitive</em> if each cell contains only one lattice point. There may look like several, but points on edges or surfaces must be shared between adjacent cells. We can always shift the cell slightly to get rid of all but one of the shared points. One way of constructing a primitive unit cell is, in two-dimensions, to take the parallelogram with two primitive lattice vectors as two of its sides. In three dimensions, this becomes a parallelepiped. Although these are simple to construct, they do not usually reflect the full symmetry of the lattice – we can generally find a much more symmetric cell (the Wigner-Seitz cell). In fact, there are an infinite number of possible unit cells. For example, in two-dimensions it is always possible to find a tiling with rectangular primitive cells. 
+</p>
+<p>
+Sometimes we chose a non-primitive unit cell. The conventional cubic unit cells for the BCC and FCC lattices are non-primitive, as is the rectangular unit cell for the centred rectangular lattice. 
+</p>
+<div class="centered"> <img alt="\includegraphics[width=0.35\textwidth ]{./figures/2d-square-ws.png}" src="images/img-0028.png" style="width:164.41424999999998pt"/> <span class="hspace" style="width: -28.908pt"></span> <img alt="\includegraphics[width=0.35\textwidth ]{./figures/2d-hexagonal-ws.png}" src="images/img-0029.png" style="width:164.41424999999998pt"/> <span class="hspace" style="width: -14.454pt"></span> <img alt="\includegraphics[width=0.35\textwidth ]{./figures/2d-oblique-ws.png}" src="images/img-0030.png" style="width:164.41424999999998pt"/> </div>
+<p>
+The <em>Wigner-Seitz</em> unit cell is an important type of primitive unit cell, which reflects the symmetry of the lattice. It can be defined as the region in space around a lattice point which is closer to that lattice point than any other. It is clearly a primitive unit cell. The Wigner-Seitz cell can be constructed by drawing the bisectors of the lines joining the lattice point we are interested in to every other point in the lattice. Each bisector divides the structure into two parts, a part which is closer to our point than the other point, and a part which is further away. Once we have drawn all of these, we can identify the region around our point which is closer to it than <em>any</em> other point in the lattice. When we do this, we quickly realise that it is necessary to include only neighbouring points in the construction. 
+</p>
+<p>
+<span class="vspace" style="height: -21.680999999999997pt"></span>
+</p>
+<div class="centered"> <img alt="\includegraphics[width=0.45\textwidth ]{./figures/3d-bcc-ws.png}" src="images/img-0031.png" style="width:211.38975pt"/> <span class="hspace" style="width: -43.361999999999995pt"></span> <img alt="\includegraphics[width=0.57\textwidth ]{./figures/3d-fcc-ws.png}" src="images/img-0032.png" style="width:267.76034999999996pt"/> </div>
+<p>
+<span class="vspace" style="height: -25.294499999999996pt"></span>
+</p>
+<p>
+In two dimensions, we always end up with a 4- or 6-sided polygon. In three dimensions, the bisectors are planes, defining a three-dimensional polyhedron. There can be a much wider variety of shapes in three-dimensions. Here, I show a couple: for the BCC lattice (left) we get a truncated octahedron, while for the FCC lattice (right) it is a rhombic dodecahedron. 
+</p>
+<p>
+All primitive unit cells have the same volume, because they all fill the space and contain a single lattice point. It is easiest to calculate this volume using the parallelepiped defined by the primitive lattice vectors. The volume is the scalar triple product 
+</p>
+<div id="a0000000028">
+<div class="eqnarrayid" id="a0000000029"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{2.6} V_c=|\mbox{$\bm {a}$}_1 \cdot (\mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3)|. 
+\end{align}
+</script>
+</div>
+<p>
+ In two dimensions, the equivalent expression for the area is \(|\mbox{$\bm {a}$}_1 \times \mbox{$\bm {a}$}_2|\). 
+</p>
+<p>
+<br/>
+</p>
+</section>
+</section><section class="section">
+<h2 id="a0000000030">3 Lattice Planes</h2>
+<div class="centered"> <img alt="\includegraphics[width=0.4\textwidth ]{./figures/planes2d-11.png}" src="images/img-0033.png" style="width:187.90200000000002pt"/> <span class="hspace" style="width: 21.680999999999997pt"></span> <img alt="\includegraphics[width=0.47\textwidth ]{./figures/planes3d-111.png}" src="images/img-0034.png" style="width:220.78484999999998pt"/> </div>
+<p>
+If we look at the Bravais lattice, we can find regular sets of parallel planes (in 3D) or lines (in 2D) which pass through the lattice points. We call these lattice planes, or lines. The figure shows a set of such lines (the dashed lines) in a 2D square lattice, and an single plane in a 3D lattice. These planes and lines are important in understanding diffraction from the structure. 
+</p>
+<p>
+A couple of things to note. Firstly, the lattice planes are a property of the Bravais lattice, not the full structure. They pass through lattice sites, rather than atoms (though there may be an atom in the basis at the lattice sites). Secondly, the set of planes must pass through all the lattice sites. 
+</p>
+<p>
+The set of planes or lines can be labelled by a set of integers, the Miller indicies, \(\{ hkl\} \) in 3D, or \(\{ hk\} \) in 2D. In this section, we will look at how to find these indicies, first in 2D, then in 3D. 
+</p>
+<section class="subsection">
+<h3 id="a0000000031">3.1 Planes/Lines in Two Dimensions Lattices</h3>
+<div class="centered"> <img alt="\includegraphics[width=0.28\textwidth ]{./figures/planes2d-small-21.png}" src="images/img-0035.png" style="width:131.53140000000002pt"/> <span class="hspace" style="width: 14.454pt"></span> <img alt="\includegraphics[width=0.28\textwidth ]{./figures/planes2d-small-32.png}" src="images/img-0036.png" style="width:131.53140000000002pt"/> <span class="hspace" style="width: 14.454pt"></span> <img alt="\includegraphics[width=0.32\textwidth ]{./figures/planes2d-small-01.png}" src="images/img-0037.png" style="width:150.3216pt"/> </div>
+<p>
+In two dimensions, the Miller indicies \(\{ hk\} \) define a set of lines. If we have drawn a complete set of lines, the simplest way to understand the Miller indicies is they count the number of times a given primitive lattice vector is cut by the lines in the set. The first index, \(h\), counts the number of times the lattice vector \(\mbox{$\bm {a}$}_1\) is cut, while the second, \(k\), refers to \(\mbox{$\bm {a}$}_2\). There will always be a line passing through each of the sites at the ends of the vector: we count only one of these. Note that the Miller indicies cannot have any common factors: a set of lines which cut both vectors twice would consist of the \(\{ 11\} \) lines, plus additional lines midway between. These would not pass through any lattice sites, so they would not be lattice planes/lines. 
+</p>
+<p>
+Sometimes the lines, do not cut one of the primitive lattice vectors at all. This occurs when the plane is parallel to that vector. We give a value of zero for the corresponding Miller index in this case. 
+</p>
+<div class="centered"> <img alt="\includegraphics[width=0.28\textwidth ]{./figures/planes2d-small--32.png}" src="images/img-0038.png" style="width:131.53140000000002pt"/> <span class="hspace" style="width: 21.680999999999997pt"></span> <img alt="\includegraphics[width=0.28\textwidth ]{./figures/planes2d-small--32a.png}" src="images/img-0039.png" style="width:131.53140000000002pt"/> <span class="hspace" style="width: 21.680999999999997pt"></span> <img alt="\includegraphics[width=0.28\textwidth ]{./figures/planes2d-small--32b.png}" src="images/img-0040.png" style="width:131.53140000000002pt"/> </div>
+<p>
+Actually, this definition is not complete. Counting the crossings in the figure on the left, there 3 on \(\mbox{$\bm {a}$}_1\) and 2 on \(\mbox{$\bm {a}$}_2\). However, these are not the \(\{ 32\} \) lines that we saw previously. In fact, one of the Miller indicies is negative in this case. One way to see what has changed is to note that, for the \(\{ 32\} \) case, it is the same lines which cross the two primitive lattice vectors, while here they are a different set. 
+</p>
+<p>
+We need to add something to the definition to make it work here: before we count, we must chose a pair of lattice vectors which are crossed by the same set of lines. In the present case, this can only be done by reversing one of the vectors. In the middle figure, we see that the vectors \(\mbox{$\bm {a}$}_1\) and \(-\mbox{$\bm {a}$}_2\) satisfy the new condition. We assign a negative value for the index \(k\) associated with \(\mbox{$\bm {a}$}_2\). When this is written, rather than use a negative sign, we indicate this by putting a bar over the corresponding number: theses are the \(\{ 3\overline{2}\} \) lines, spoken as ‘three, two-bar’. The right hand figure shows a different way of achieving this: in this case, the vector \(\mbox{$\bm {a}$}_1\) is reversed, so these are the \(\{ \overline{3}2\} \) lines. However, the actual lines are identical. We can multiply all the indicies by \(-1\) without changing the lines. 
+</p>
+<div class="centered"> <img alt="\includegraphics[width=0.28\textwidth ]{./figures/planes2d-oblique-23a.png}" src="images/img-0041.png" style="width:131.53140000000002pt"/> <span class="hspace" style="width: 21.680999999999997pt"></span> <img alt="\includegraphics[width=0.28\textwidth ]{./figures/planes2d-hexagon-12a.png}" src="images/img-0042.png" style="width:131.53140000000002pt"/> <span class="hspace" style="width: 21.680999999999997pt"></span> <img alt="\includegraphics[width=0.28\textwidth ]{./figures/planes2d-hexagon-12b.png}" src="images/img-0043.png" style="width:131.53140000000002pt"/> </div>
+<p>
+The method works in exactly the same way with oblique axes: we count the number of times the same set of lines cross each of the two primitive lattice vectors. Note that the Miller indicies will depend on the choice of primitive lattice vectors which defines the lattice. The right hand pair of figures shows the same lattice and the same lines, but with one choice of primitive lattice vectors they are \(\{ 12\} \) lines, while with the other they are \(\{ 13\} \). When discussing lines and planes, you need to be aware of the choice of primitive lattice vectors. 
+</p>
+<div class="centered"> <img alt="\includegraphics[width=0.28\textwidth ]{./figures/planes2d-single-23.png}" src="images/img-0044.png" style="width:131.53140000000002pt"/> <span class="hspace" style="width: 21.680999999999997pt"></span> <img alt="\includegraphics[width=0.28\textwidth ]{./figures/planes2d-single-21.png}" src="images/img-0045.png" style="width:131.53140000000002pt"/> <span class="hspace" style="width: 21.680999999999997pt"></span> <img alt="\includegraphics[width=0.32\textwidth ]{./figures/planes2d-single-2-1.png}" src="images/img-0046.png" style="width:150.3216pt"/> </div>
+<p>
+Suppose we have been given just single line, rather than a complete set which can be counted? Obviously, this can be fixed by drawing in the missing lines, but we can use a slightly different approach which corresponds to an alternative, more usual, definition of Miller indicies. Looking at the left hand figure, the black dashed line shown cuts the \(\mbox{$\bm {a}$}_1\) lattice vector half way, and the the \(\mbox{$\bm {a}$}_2\) vector one third of the way along its length. Taking the reciprocals of these quantitites gives the Miller indicies: \(h=2\) and \(k=3\). However, if we look at the grey line, the intersections are at \((1,\frac23)\), which has reciprocals \(1\) and \(\frac{3}{2}\). To get the Miller indicies this time, we have to multiply by the smallest quantity which gives us two integers. In this case, we multiply by 2, to get \(h=2\) and \(k=3\) again. 
+</p>
+<p>
+The same approach works for oblique axes. In the middle figure, the intersections are at \((\frac12,1)\), giving the Miller indicies \(\{ 12\} \). We still have to cope with negative indicies: in the right hand example, the line intersects \(\mbox{$\bm {a}$}_1\) at \(\frac12\) and the negative of \(\mbox{$\bm {a}$}_2\) at \(-1\), giving indicies \(\{ 2\overline{1}\} \). 
+</p>
+<section class="subsubsection">
+<h4 id="a0000000032">Separation of Lines in Two Dimensions</h4>
+<div class="centered"> <div class="mbox" id="a0000000033" style="width: "> <img alt="\includegraphics[width=0.4\textwidth ]{./figures/planes2d-separation.png}" src="images/img-0047.png" style="width:187.90200000000002pt"/> </div> </div>
+<p>
+  Calculating the separation of the planes, \(d_{hk}\), is straightforward when we have a square lattice. In the figure there are two right angled triangles, from which we get 
+</p>
+<div id="a0000000034">
+<div class="eqnarrayid" id="a0000000035"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{3.1} \sin {\theta }=\frac{d}{k^{-1} a}=\frac{dk}{a} \quad \mbox{and} \quad \sin {\left(\frac{\pi }{2}-\theta \right)}=\cos {\theta }=\frac{dh}{a}\; , 
+\end{align}
+</script>
+</div>
+<p>
+ where \(a\) is the lattice constant. However 
+</p>
+<div id="a0000000036">
+<div class="eqnarrayid" id="a0000000037"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{3.2} \sin ^2{\theta }+\cos ^2{\theta }=1=\left(\frac{dk}{a}\right)^2+\left(\frac{dh}{a}\right)^2 =\left(\frac{d}{a}\right)^2(h^2+k^2)\; . 
+\end{align}
+</script>
+</div>
+<p>
+ Hence 
+</p>
+<div id="eq:planesep2d">
+<div class="eqnarrayid" id="a0000000038"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{3.3} d_{hk}=\frac{a}{\sqrt{h^2+k^2}} \label{eq:planesep2d} 
+\end{align}
+</script>
+</div>
+<div class="centered"> <div class="mbox" id="a0000000039" style="width: "> <img alt="\includegraphics[width=0.6\textwidth ]{./figures/planes2d-separation-oblique-new.png}" src="images/img-0048.png" style="width:281.853pt"/> </div> </div>
+<p>
+With a non-square lattice, we can still calculate the separation using geometry, but the general formula is complicated. Here, we do an example, where the lattice vectors are \(\mbox{$\bm {a}$}_1=a\, \hat{\bm x}\) and \(\mbox{$\bm {a}$}_2=\frac12 a(-\hat{\bm x}+\hat{\bm y})\). We will calculate the separation of the \(\{ 21\} \) set of lines, that is the distance \(d\) from the origin \(O\) to the dashed line at \(B\). 
+</p>
+<p>
+We first find the angle, \(\theta \), between the \(\mbox{$\bm {a}$}_1\) vector and one of the lines. This is the angle between the vectors \(\overrightarrow {DO}=-\mbox{$\bm {a_1}$}=-\hat{\bm x}\) and \(\overrightarrow {DC}=-\mbox{$\bm {a}$}_1+2\,  \mbox{$\bm {a}$}_2=a (-2\,  \hat{\bm x} +\hat{\bm y})\). Taking the dot product of these two vectors, we get 
+</p>
+<div id="a0000000040">
+<div class="eqnarrayid" id="a0000000041"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{3.4} \overrightarrow {DO}\cdot \overrightarrow {DC} =2 a^2= DO \times DC \,  \cos {\theta }=a^2 \sqrt{5} \cos {\theta }\; . 
+\end{align}
+</script>
+</div>
+<p>
+ Thus \(\cos {\theta }=2/\sqrt{5}\). However, from the triangle \(OAB\), 
+</p>
+<div id="a0000000042">
+<div class="eqnarrayid" id="a0000000043"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{3.5} \sin {\theta }=\frac{OB}{OA}=\frac{d}{\frac12 a}=\frac{2d}{a}\; . 
+\end{align}
+</script>
+</div>
+<p>
+ Hence, using \(\sin ^2{\theta }+\cos ^2{\theta }=1\), we get 
+</p>
+<div id="a0000000044">
+<div class="eqnarrayid" id="a0000000045"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{3.6} \frac45+\frac{4d^2}{a^2}=1\; , 
+\end{align}
+</script>
+</div>
+<p>
+ which gives \(d=\frac{\sqrt{5}}{10}a\). 
+</p>
+</section>
+</section><section class="subsection">
+<h3 id="a0000000046">3.2 Lattice Planes in Three Dimensions</h3>
+<p>
+The extension of the definition of the Miller indicies to three dimensional lattices is straightforward. There are now three primitive lattice vectors and planes instead of lines cutting them. The counting process gives three indicies, \(\{ hkl\} \). In three dimensional diagrams, it is hard to see multiple sets of planes, so I will concentrate on the second approach we used for the two dimensional lattices, and deal with just a single plane in each example. 
+</p>
+<div class="centered"> <img alt="\includegraphics[width=0.45\textwidth ]{./figures/planes3d-small-132.png}" src="images/img-0049.png" style="width:211.38975pt"/> <img alt="\includegraphics[width=0.45\textwidth ]{./figures/planes3d-small-132-3.png}" src="images/img-0050.png" style="width:211.38975pt"/> </div>
+<p>
+In this example, the plane cuts \(\mbox{$\bm {a}$}_1\) at its end point, \(\mbox{$\bm {a}$}_2\) a third of the way along its length, and \(\mbox{$\bm {a}$}_3\) half way. Taking the reciprocals of these, we get \(h=1\), \(k=3\) and \(l=2\). It is a \(\{ 132\} \) plane. Of course, if we can visualise the whole set of planes, as on the right, the counting method gives the same answer. 
+</p>
+<div class="centered"> <img alt="\includegraphics[width=0.45\textwidth ]{./figures/planes3d-small-011.png}" src="images/img-0051.png" style="width:211.38975pt"/> <img alt="\includegraphics[width=0.45\textwidth ]{./figures/planes3d-small-001.png}" src="images/img-0052.png" style="width:211.38975pt"/> </div>
+<p>
+Remember that when a plane is parallel to a lattice vector, the corresponding Miller index is zero. In three dimensions, there can be one or two zero Miller indicies. 
+</p>
+<div class="centered"> <img alt="\includegraphics[width=0.45\textwidth ]{./figures/planes3d-small-121.png}" src="images/img-0053.png" style="width:211.38975pt"/> <img alt="\includegraphics[width=0.45\textwidth ]{./figures/planes3d-small-121-2.png}" src="images/img-0054.png" style="width:211.38975pt"/> </div>
+<p>
+In the example above, we see a \(\{ 121\} \) plane. But suppose the plane we are shown is the second plane in the right hand figure. Just seeing this cube, it only cuts the \(\mbox{$\bm {a}$}_2\) lattice vector. But it is clearly another \(\{ 121\} \) plane, not \(\{ 010\} \). 
+</p>
+<div class="centered"> <img alt="\includegraphics[width=0.65\textwidth ]{./figures/planes3d-small-121-2a.png}" src="images/img-0055.png" style="width:305.34075pt"/> </div>
+<p>
+Extending the figure to a few more unit cells, it becomes clear what happens. The second plane cuts the extended \(\mbox{$\bm {a}$}_1\) vector at \(2\times \mbox{$\bm {a}$}_1\), \(\mbox{$\bm {a}$}_2\) at \(1\times \mbox{$\bm {a}$}_2\) and \(\mbox{$\bm {a}$}_3\) at \(2\times \mbox{$\bm {a}$}_3\). The reciprocals of \((2,1,2)\) are \((\frac12,1,\frac12)\). To get the Miller indicies, we multiply by the smallest quantity which makes all these integers, here multiplying by 2. This gives \(h=1\), \(k=2\) and \(l=1\), as expected. We get to the same conclusion by changing the point where we draw the lattice vectors: in this case, starting from the end of the \(\mbox{$\bm {a}$}_3\) vector, the plane becomes the one adjacent to the origin again. 
+</p>
+<div class="centered"> <img alt="\includegraphics[width=0.45\textwidth ]{./figures/planes3d-oblique-12-2.png}" src="images/img-0056.png" style="width:211.38975pt"/> <img alt="\includegraphics[width=0.45\textwidth ]{./figures/planes3d-oblique-12-2a.png}" src="images/img-0057.png" style="width:211.38975pt"/> </div>
+<p>
+The rule for negative indicies works in the same way as in two dimensions. We have to identify a vertex of the parallelapiped for which the same plane cuts all the lattice vectors. In this case, it is the one at the end of the \(\mbox{$\bm {a}$}_3\) vector. Relative to that point, the plane shown intersects \(\mbox{$\bm {a}$}_1\) at its end, and \(\mbox{$\bm {a}$}_2\) and \(-\mbox{$\bm {a}$}_3\) at their mid-points. The reciprocals of \((1,\frac12,-\frac12)\) are the Miller indicies \(\{ 12\overline{2}\} \). As before, we can multiply all the indicies by \(-1\), so we could also call this a \(\{ \overline{1}\, \overline{2}2\} \) plane. 
+</p>
+<p>
+Calculating the separation of the lattice planes in a set is trickier in three dimensions than in two. We will find a general method later after introducing the reciprocal lattice. For a cubic lattice, with lattice constant \(a\), Eq.(<a class="ref" href="#eq:planesep2d">3.3</a>) generalises to 
+</p>
+<div id="eq:3dplanesep">
+<div class="eqnarrayid" id="a0000000047"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{3.7} d_{hkl}=\frac{a}{\sqrt{h^2+k^2+l^2}} \label{eq:3dplanesep} 
+\end{align}
+</script>
+</div>
+</section><section class="subsection">
+<h3 id="a0000000048">3.3 Lattice Planes and Diffraction</h3>
+<p>
+The reason we have spent time learning to identify lattice planes is that they are important in understanding how waves diffract from a crystalline structure. The planes play the same role as the lines etched on a diffraction grating. 
+</p>
+<div class="centered"> <div class="mbox" id="a0000000049" style="width: "> <img alt="\includegraphics[width=0.9\textwidth ]{./figures/bragg.png}" src="images/img-0058.png" style="width:422.7795pt"/> </div> </div>
+<p>
+The figure above shows a pair of lattice planes edge on (or lines if this is a two dimensional lattice). We consider the path difference between two adjacent planes, separated by \(d\). The path difference, \(x\), for the incoming wave is \(x=d\sin {\theta }\). There is an identical path difference for the outgoing wave. To get constructive interference for these waves, we need the total path difference, \(2x\), to be a integer multiple, \(n\), of the wavelength, \(\lambda \). This gives <em>Bragg’s Law</em>, 
+</p>
+<div id="eq:bragg">
+<div class="eqnarrayid" id="a0000000050"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{3.8} 2d_{hkl} \sin {\theta }=n \lambda \; . \label{eq:bragg} 
+\end{align}
+</script>
+</div>
+<p>
+ Note that (in three dimensions) chosing \(\theta \) gives a cone of possible incoming wavevectors, at the same angle to the normal, all of which will diffract. 
+</p>
+<p>
+Although this looks very similar to the formula for a diffraction grating, there are important differences. Firstly, the incoming and outgoing waves are within the lattice, not at an angle to it. For a diffraction grating, this would correspond to waves propagating in the same plane as the grating. Secondly, the incoming and outgoing angles, \(\theta \), must be the same, so, for a given wavelength, there are only certain values of incoming angle for which diffraction can occur, given by Eq.(<a class="ref" href="#eq:bragg">3.8</a>). For a diffraction grating, we typically fix the incoming angle and the grating formula gives us the possible outgoing angles. We will see later how to understand how a diffraction grating grating works in terms of Bragg’s law. 
+</p>
+<p>
+This derivation is not great, but it gives the correct answer. I have assumed that the waves scatter of a set of defined planes, where in reality the scattering could come from objects anywhere in the unit cell. I have not shown it, but diffraction can only occur when the input and output angles are the same and at the angles given by Eq.(<a class="ref" href="#eq:bragg">3.8</a>); in any other directions there is complete destructive interference. This is related to the fact that we are considering reflections off an infinite set of planes, so it is like diffraction from a grating with an infinite number of lines. In that limit, the diffration peaks become infinitesimally narrow. We will shortly look at a more rigorous derivation of Bragg’s law which corrects these shortcomings. 
+</p>
+<p>
+For a given wavelength and set of lattice planes, \(\{ hkl\} \), Bragg’s law gives us a set of values (corresponding to different \(n\)) for \(\sin {\theta }\). However, \(|\sin {\theta }|\leq 1\), so only a few of these correspond to real angles. For example, let us consider the diffraction off the \(\{ 111\} \) set of planes in a cubic lattice with lattice constant \(a=0.15\)nm, using X-rays with wavelength \(\lambda =0.080\)nm. We first use Eq.(<a class="ref" href="#eq:3dplanesep">3.7</a>) to work out the plane separation: it is \(d=a/\sqrt{3}\approx 0.0866\)nm. Then Eq.(<a class="ref" href="#eq:bragg">3.8</a>) gives us 
+</p>
+<div id="a0000000051">
+<div class="eqnarrayid" id="a0000000052"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{3.9} 2 \times 0.0866 \times \sin {\theta }=n \times 0.08\; , 
+\end{align}
+</script>
+</div>
+<p>
+ This gives two possible angles, \(\theta \approx 28^\circ \) for \(n=1\) and \(\theta \approx 67^\circ \) for \(n=2\). Note that for larger values of the Miller indicies, the planes become closer together: \(d\) gets smaller. If \(2d{\lt}\lambda \), there are no solutions for \(\theta \), so it is generally the lower index planes which diffract. For the cubic lattice the condition for diffraction (at some angle) is 
+</p>
+<div id="a0000000053">
+<div class="eqnarrayid" id="a0000000054"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{3.10} 2 \frac{a}{\sqrt{h^2+k^2+l^2}}\geq \lambda \qquad \Rightarrow \qquad h^2+k^2+l^2 \leq \left(\frac{2a}{\lambda }\right)^2\; . 
+\end{align}
+</script>
+</div>
+<p>
+ In our case this corresponds to \(h^2+k^2+l^2 \leq 14\), so we can just see diffraction from \(\{ 123\} \) planes, but not for sets with smaller separations. 
+</p>
+<p>
+<br/>
+</p>
+</section>
+</section><section class="section">
+<h2 id="a0000000055">4 The Reciprocal Lattice</h2>
+<section class="subsection">
+<h3 id="a0000000056">4.1 Diffraction and the Fourier Transform</h3>
+<p>
+<b class="bf">The diffraction produced by an object is given by the Fourier transform of its structure</b>
+</p>
+<p>
+When you studied diffraction in optics, you met the idea that the diffraction pattern produced by something like a diffraction grating can be calculated by making a Fourier transform. For a one dimensional aperture with transmission function \(f(x)\), you learned that the diffraction pattern is given by the Fourier transform 
+</p>
+<div id="a0000000057">
+<div class="eqnarrayid" id="a0000000058"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.1} F(k_x)=\frac{1}{\sqrt{2\pi }} \int _{-\infty }^\infty \! \! \! \! \!  dx \,  f(x)\,  e^{-i k_x x}\; . 
+\end{align}
+</script>
+</div>
+<p>
+ Here \(k_x=2\pi \sin {\theta }/\lambda \), with \(\theta \) the angular position on the screen. In optics, we measure the intensity of the light, which is proportional to \(|F(k_x)|^2\). For a two-dimensional aperture, \(f(x,y)\), this generalises to 
+</p>
+<div id="a0000000059">
+<div class="eqnarrayid" id="a0000000060"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.2} F(k_x,k_y)=\frac{1}{{2\pi }} \int _{-\infty }^\infty \! \! \! \! \!  dx \int _{-\infty }^\infty \! \! \! \! \!  dy \,  f(x,y)\,  e^{-i (k_x x+k_y y)}\; . 
+\end{align}
+</script>
+</div>
+<div class="centered"> <div class="mbox" id="a0000000061" style="width: "> <img alt="\includegraphics[width=0.85\textwidth ]{./figures/grating.png}" src="images/img-0059.png" style="width:399.29175pt"/> </div> </div>
+<p>
+Applying this a one-dimensional diffraction grating with \(N\) slits, you found that the intensity (as a function of position, \(x\) on the screen) looks like a series of fairly sharp peaks. As the number of lines on the grating increases from 5 to 10, the peaks get narrower, and the intensity between them gets smaller. 
+</p>
+<p>
+Diffraction from a periodic lattice is similar to what we get for a diffraction grating. The main difference is that the grating is three dimensional, and typically the number of lattice sites is \(N \sim 10^{20}\) or more. We normally take the limit \(N \rightarrow \infty \) and neglect the finite nature of real lattices. In this limit, the diffraction peaks become infinitely sharp (we will show they are Dirac delta functions) with zero intensity between them. 
+</p>
+<p>
+The quantity, equivalent to the aperture transmission function, for which we take the Fourier transform, depends on the nature of the waves being diffracted. X-rays and electrons scatter mainly off charges, so we are transforming the total charge density. Neutrons however scatter off atomic nuclei, so we essentially have a set of point scatterers. In photonic crystals, the strength of the scattering is determined by the refractive index. We will use the function \(\rho (\mbox{$\bm {r}$})\) to correspond to whatever quantity is relevant for a particular scattering process. In all cases it will be a periodic function, which we will take to extend infinitely over all space (though maybe in only one or two dimensions). 
+</p>
+<div class="centered"> <div class="mbox" id="a0000000062" style="width: "> <img alt="\includegraphics[width=0.3\textwidth ]{./figures/diffraction-simple.png}" src="images/img-0060.png" style="width:140.9265pt"/> </div> </div>
+<p>
+Consider the contribution of the wave scattered off an infinitesimal blob of material, volume \(d^3\mbox{$\bm {r}$}\). Calling the incoming and outgoing wavevectors \({\bm k}_{\rm in}\) and \({\bm k}_{\rm out}\), the contribution to the total scattered wave amplitude will be proportional to 
+</p>
+<div id="a0000000063">
+<div class="eqnarrayid" id="a0000000064"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.3} dF=d^3\mbox{$\bm {r}$}\,  \rho (\mbox{$\bm {r}$}) \,  e^{-i{\bm k}\cdot \mbox{$\bm {r}$}}\; , 
+\end{align}
+</script>
+</div>
+<p>
+ where \({\bm k}={\bm k}_{\rm out}-{\bm k}_{\rm in}\). Integrating over the structure, we get 
+</p>
+<div id="a0000000065">
+<div class="eqnarrayid" id="a0000000066"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.4} F({\bm k})=\frac{1}{(2\pi )^{3/2}} \int d^3\mbox{$\bm {r}$}\,  \rho (\mbox{$\bm {r}$}) \,  e^{-i{\bm k}\cdot \mbox{$\bm {r}$}}\; , 
+\end{align}
+</script>
+</div>
+<p>
+ where I have included the factor \((2\pi )^{-3/2}\) to make this consistent with the definition you have used for the Fourier transform. 
+</p>
+</section><section class="subsection">
+<h3 id="a0000000067">4.2 The Fourier Series and Fourier Transform</h3>
+<p>
+<b class="bf">The Fourier transform of a periodic function is a set of Dirac delta functions equally spaced in \(k\)</b>
+</p>
+<p>
+You are familiar with the Fourier series expansion of a periodic function with period \(L\): 
+</p>
+<div id="a0000000068">
+<div class="eqnarrayid" id="a0000000069"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.5} f(x)=\frac12 a_0 + \sum _{n=1}^\infty a_n \cos {\left(\frac{2n\pi x}{L}\right)} +b_n \sin {\left(\frac{2n\pi x}{L}\right)}\; . 
+\end{align}
+</script>
+</div>
+<p>
+ This is written in terms of sines and cosines, but we can make it look more like a Fourier transform using 
+</p>
+<div id="a0000000070">
+<div class="eqnarrayid" id="a0000000071"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.6} \cos {\theta }=\frac12 ( e^{i \theta } + e^{-i\theta }) \qquad \sin {\theta }=\frac{1}{2i} ( e^{i \theta } - e^{-i\theta })\; . 
+\end{align}
+</script>
+</div>
+<p>
+ Writing \(G_n=2n \pi /L\) and substituting gives 
+</p>
+<div id="eq:four-series">
+<div class="eqnarrayid" id="a0000000072"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.7} f(x)=\frac12 a_0 + \sum _{n=1}^\infty \frac12 (a_n-i b_n) e^{iG_n x} + \frac12 (a_n+i b_n) e^{-iG_n x} =\sum _{n=-\infty }^\infty c_n e^{i G_n x}\; , \label{eq:four-series} 
+\end{align}
+</script>
+</div>
+<p>
+ where \(c_n=\frac12(a_n-ib_n)\), \(c_0=\frac12 a_0\) and \(c_{-n}=c_n^*\) (assuming that \(f(x)\) is a real function, so \(a_n\) and \(b_n\) are real). We can find a formula for \(c_n\) from the expressions for \(a_n\) and \(b_n\): 
+</p>
+<div id="eq:fourier-coeff">
+<div class="eqnarrayid" id="a0000000073"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.8} c_n=\frac12 (a_n - i b_n)= \left(\frac{1}{L}\int _0^L \! \! \! \!  dx \,  f(x) \cos {\left(G_n x \right)}\right) -i \left(\frac{1}{L}\int _0^L \! \! \! \!  dx \,  f(x) \sin {\left(G_n x \right)}\right) = \frac{1}{L}\int _0^L \! \! \! \!  dx \,  f(x) e^{-iG_n x}\; . \label{eq:fourier-coeff} 
+\end{align}
+</script>
+</div>
+<p>
+This looks more like a Fourier transform, but it is not quite yet. Taking the Fourier transform of Eq.(<a class="ref" href="#eq:four-series">4.7</a>), we get 
+</p>
+<div id="a0000000074">
+<div class="eqnarrayid" id="a0000000075"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.9} F(k)=\frac{1}{\sqrt{2\pi }} \int _{-\infty }^\infty \! \! \! \! \! \!  dx \;  f(x)e^{-ikx} =\frac{1}{\sqrt{2\pi }} \int _{-\infty }^\infty \! \! \! \! \! \!  dx \sum _{n=-\infty }^\infty c_n e^{i (G_n-k) x} =\sum _{n=-\infty }^\infty c_n \!  \frac{1}{\sqrt{2\pi }} \int _{-\infty }^\infty \! \! \! \! \! \!  dx \;  e^{-i (k-G_n) x}\; . 
+\end{align}
+</script>
+</div>
+<p>
+ Now recall that the Dirac delta function can be written as a Fourier transform: 
+</p>
+<div id="a0000000076">
+<div class="eqnarrayid" id="a0000000077"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.10} \delta (x-x_0)=\frac{1}{\sqrt{2\pi }} \int _{-\infty }^\infty \! \! \! \! \! \!  dk \;  e^{i (x-x_0) k} \quad \mbox{or} \quad \delta (k-k_0)=\frac{1}{\sqrt{2\pi }} \int _{-\infty }^\infty \! \! \! \! \! \!  dk \;  e^{-i (k-k_0) x} \; . 
+\end{align}
+</script>
+</div>
+<p>
+ So the expression for the Fourier transform of a periodic function becomes 
+</p>
+<div id="a0000000078">
+<div class="eqnarrayid" id="a0000000079"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.11} F(k)=\sum _{n=-\infty }^\infty \! \! \! \! \!  c_n \;  \delta (k-G_n)\; . 
+\end{align}
+</script>
+</div>
+<p>
+ It is a set of delta functions equally spaced in \(k\). The strengths of these delta functions is given by the Fourier coefficients \(c_n=\frac12(a_n-ib_n)\). 
+</p>
+</section><section class="subsection">
+<h3 id="a0000000080">4.3 The Reciprocal Lattice</h3>
+<p>
+<b class="bf">The reciprocal lattice is the Fourier transform of the real space lattice. When a wave scatters off a periodic lattice, its wavevector can only change by a reciprocal lattice vector.</b>
+</p>
+<div class="centered"> <div class="mbox" id="a0000000081" style="width: "> <img alt="\includegraphics[width=0.7\textwidth ]{./figures/reciprocal1d.png}" src="images/img-0061.png" style="width:328.82849999999996pt"/> </div> </div>
+<p>
+Suppose we define a real space lattice by a periodic array of Dirac delta functions, 
+</p>
+<div id="a0000000082">
+<div class="eqnarrayid" id="a0000000083"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.12} f(x)=\sum _{n=-\infty }^\infty \delta (x-nL)\; . 
+\end{align}
+</script>
+</div>
+<p>
+ We can find the Fourier transform of this function by calculating the \(c_n\) using Eq.(<a class="ref" href="#eq:fourier-coeff">4.8</a>): 
+</p>
+<div id="a0000000084">
+<div class="eqnarrayid" id="a0000000085"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.13} c_n = \frac{1}{L}\int _0^L \! \! \! \!  dx \;  f(x) e^{-iG_n x} = \frac{1}{L}\int _0^L \! \! \! \!  dx \;  \delta (x) e^{-iG_n x} =\frac{1}{L}\; . 
+\end{align}
+</script>
+</div>
+<p>
+ This gives 
+</p>
+<div id="a0000000086">
+<div class="eqnarrayid" id="a0000000087"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.14} F(k)=\frac{1}{L}\sum _{n=-\infty }^\infty \! \! \! \! \!  \delta (k-G_n) =\frac{1}{L}\sum _{n=-\infty }^\infty \! \! \! \! \!  \delta \left(k-\frac{2n\pi }{L}\right)\; . 
+\end{align}
+</script>
+</div>
+<p>
+ So the Fourier transform is another set of delta functions, which we can similarly interpret as a lattice. The Fourier transform of the real space lattice with lattice constant \(L\) is a lattice in <em>reciprocal space</em> with lattice constant \(2 \pi /L\). We call this the <em>reciprocal lattice</em>. 
+</p>
+<p>
+Without going into details of Fourier series in two or three dimensions, we can see how this generalises to higher dimensions. Although it is not the most general three dimensional periodic function, we can create something periodic in three dimensions by multiplying one dimensional periodic functions: \(f(\mbox{$\bm {r}$})=f_x(x) \times f_y(y) \times f_z(z)\). This function can be represented by the product of three fourier series like Eq.(<a class="ref" href="#eq:four-series">4.7</a>): 
+</p>
+<div id="a0000000088">
+<div class="eqnarrayid" id="a0000000089"></div><script type="math/tex; mode=display">
+\begin{align}
+ f(\mbox{$\bm {r}$})& = \left(\sum _{n_x=-\infty }^\infty c_{n_x} e^{i G_{n_x} x}\right) \left(\sum _{n_y=-\infty }^\infty c_{n_y} e^{i G_{n_y} y}\right) \left(\sum _{n_z=-\infty }^\infty c_{n_z} e^{i G_{n_z} z}\right) \nonumber \\ 
+\tag{4.15}& =\sum _{n_x n_y n_z} c_{n_x}c_{n_y}c_{n_z} \;  e^{i( G_{n_x} x+ G_{n_y} y+ G_{n_z} z)} =\sum _{\mbox{\scriptsize {\bf G}}} C_{\mbox{\scriptsize {\bf G}}} \,  e^{i {\mbox{\scriptsize {\bf G}}} \cdot \mbox{$\bm {r}$}} \; , 
+\end{align}
+</script>
+</div>
+<p>
+ where \(\mbox{$\bm {G}$}=G_{n_x}\hat{\bm x} +G_{n_y}\hat{\bm y} +G_{n_z}\hat{\bm z}\). In our case the coefficients \(C_{\mbox{\scriptsize {\bf G}}}\) are simply products \(c_{n_x} c_{n_y} c_{n_z}\) of those from the one dimensional Fourier series, Eq.(<a class="ref" href="#eq:fourier-coeff">4.8</a>): 
+</p>
+<div id="a0000000090">
+<div class="eqnarrayid" id="a0000000091"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.16} C_{\mbox{\scriptsize {\bf G}}} =\frac{1}{L_xL_yL_z}\int _0^{L_x} \! \! \! \! dx \int _0^{L_y} \! \! \! \! dy \int _0^{L_z} \! \! \! \! dz \;  f_x(x) f_y(y) f_z(z) \;  e^{-i(G_{n_x}x + G_{n_y}y +G_{n_z}z )} 
+\end{align}
+</script>
+</div>
+<p>
+ More generally 
+</p>
+<div id="eq:unitcell">
+<div class="eqnarrayid" id="a0000000092"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.17} C_{\mbox{\scriptsize {\bf G}}}=\frac{1}{V_c} \int _{\mbox{\scriptsize unit cell}} \kern -2em d^3\mbox{$\bm {r}$} \,  f(\mbox{$\bm {r}$})\,  e^{-i {\mbox{\scriptsize {\bf G}}} \cdot {\mbox{\scriptsize {\bf r}}}} \; . \label{eq:unitcell} 
+\end{align}
+</script>
+</div>
+<p>
+The three dimensional Fourier transform of \(f(\mbox{$\bm {r}$})\) will be 
+</p>
+<div id="a0000000093">
+<div class="eqnarrayid" id="eq:fourtran"></div><script type="math/tex; mode=display">
+\begin{align}
+ F({\bm k})& = \frac{1}{(2\pi )^{3/2}} \int d^3\mbox{$\bm {r}$} \,  f(\mbox{$\bm {r}$})\,  e^{-i{\bm k} \cdot \mbox{$\bm {r}$}}= \frac{1}{(2\pi )^{3/2}} \int d^3\mbox{$\bm {r}$} \,  \left(\sum _{\mbox{\scriptsize {\bf G}}} C_{\mbox{\scriptsize {\bf G}}} \;  e^{i {\mbox{\scriptsize {\bf G}}} \cdot {\mbox{\scriptsize {\bf r}}}}\right) e^{-i{\bm k} \cdot \mbox{$\bm {r}$}} \nonumber \\ 
+& =\frac{1}{(2\pi )^{3/2}} \int _{-\infty }^\infty \! \! \! \! \!  dx \int _{-\infty }^\infty \! \! \! \! \!  dy \int _{-\infty }^\infty \! \! \! \! \!  dz \sum _{\mbox{\scriptsize {\bf G}}} C_{\mbox{\scriptsize {\bf G}}} \;  e^{i( G_{n_x} x+ G_{n_y} y+ G_{n_z} z)} e^{-i(k_x x + k_y y + k_z z)} \nonumber \\ 
+& = \sum _{\mbox{\scriptsize {\bf G}}} \;  \frac{1}{\sqrt{2\pi }} \int _{-\infty }^\infty \! \! \! \! \! dx\;  e^{-i (k_x-G_{n_x}) x} \times \frac{1}{\sqrt{2\pi }} \int _{-\infty }^\infty \! \! \! \! \! dy\;  f_y(y)\; e^{(k_y-G_{n_y}) y} \times \frac{1}{\sqrt{2\pi }} \int _{-\infty }^\infty \! \! \! \! \! dz\;  f_z(z)\; e^{-i (k_z-G_{n_z}) z} \nonumber \\ 
+\tag{4.18}& =\sum _{\mbox{\scriptsize {\bf G}}} C_{\mbox{\scriptsize {\bf G}}} \;  \delta (k_x-G_{n_x}) \,  \delta (k_y-G_{n_y}) \,  \delta (k_z-G_{n_z}) = \sum _{\mbox{\scriptsize {\bf G}}} C_{\mbox{\scriptsize {\bf G}}} \;  \delta ^3({\bm k}-\mbox{$\bm {G}$})\; , \label{eq:fourtran} 
+\end{align}
+</script>
+</div>
+<p>
+ where the three dimensional delta function \(\delta ^3({\bm k}-\mbox{$\bm {G}$})\) is just the product \(\delta (k_x-G_{n_x}) \,  \delta (k_y-G_{n_y}) \,  \delta (k_z-G_{n_z})\). It is non-zero only when 
+</p>
+<div id="eq:gvectors1">
+<div class="eqnarrayid" id="a0000000094"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.19} {\bm k}=\mbox{$\bm {G}$}=G_{n_x}\,  \hat{\bm x} +G_{n_y}\,  \hat{\bm y} +G_{n_z}\,  \hat{\bm z} = n_x \left(\frac{2\pi }{L_x}\right) \,  \hat{\bm x} + n_y \left(\frac{2\pi }{L_y}\right) \,  \hat{\bm y} +n_z \left(\frac{2\pi }{L_z}\right) \,  \hat{\bm z}\; . \label{eq:gvectors1} 
+\end{align}
+</script>
+</div>
+<p>
+ These \(\mbox{$\bm {G}$}\) values form a lattice of points in three dimensional \(k\)-space (or reciprocal space), the reciprocal lattice. They are called <em>reciprocal lattice vectors</em>. We can build the reciprocal lattice out of a set primitive reciprocal lattice vectors. In this case, they are 
+</p>
+<div id="eq:rl-cuboid">
+<div class="eqnarrayid" id="a0000000095"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.20} \mbox{$\bm {b}$}_1=\frac{2\pi }{L_x} \,  \hat{\bm x} \qquad \mbox{$\bm {b}$}_2=\frac{2\pi }{L_y} \,  \hat{\bm y} \qquad \mbox{$\bm {b}$}_3=\frac{2\pi }{L_z} \,  \hat{\bm z} \label{eq:rl-cuboid} 
+\end{align}
+</script>
+</div>
+<p>
+The Fourier transform in Eq.(<a class="ref" href="#eq:fourtran">4.18</a>) can also be understood in terms of the convolution of the Bravais lattice and basis in Eq.(<a class="ref" href="#eq:convolve">2.1</a>), 
+</p>
+<div id="a0000000096">
+<div class="eqnarrayid" id="a0000000097"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.21} \rho (\mbox{$\bm {r}$})=\rho _{\rm basis}(\mbox{$\bm {r}$}) * \sum _i \delta ^3(\mbox{$\bm {r}$}-\mbox{$\bm {r}$}_i)\; . 
+\end{align}
+</script>
+</div>
+<p>
+ The transform of a convolution is equal to the product of the transforms of the two functions. We have seen that the fourier transform of the Bravais lattice is the set of delta functions \(\delta ^3(\mbox{$\bm {k}$} - \mbox{$\bm {G}$})\). The basis can always be defined so that it is only non-zero in the unit cell, so Eq.(<a class="ref" href="#eq:unitcell">4.17</a>) is the Fourier transform of the basis \(\rho _{\rm basis}(\mbox{$\bm {r}$})\): 
+</p>
+<div id="eq:fourier-basis">
+<div class="eqnarrayid" id="a0000000098"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.22} C({\bm k})=\frac{1}{V_c} \int _{\mbox{\scriptsize all space}} \kern -2em d^3\mbox{$\bm {r}$} \,  \rho _{\rm basis}(\mbox{$\bm {r}$})\,  e^{-i \mbox{$\bm {k}$}\cdot \mbox{$\bm {r}$}} \; . \label{eq:fourier-basis} 
+\end{align}
+</script>
+</div>
+<p>
+ The convolution theorem then gives 
+</p>
+<div id="eq:fourtran1">
+<div class="eqnarrayid" id="a0000000099"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.23} F(\mbox{$\bm {k}$})=C(\mbox{$\bm {k}$}) \times \sum _{\mbox{\scriptsize {\bf G}}} \delta ^3({\bm k}-\mbox{$\bm {G}$})\; . \label{eq:fourtran1} 
+\end{align}
+</script>
+</div>
+<p>
+ This is, in fact, the same as Eq.(<a class="ref" href="#eq:fourtran">4.18</a>), because \(F(\mbox{$\bm {k}$})\) is only non-zero when \(\mbox{$\bm {k}$}\) is equal to one of the \(\mbox{$\bm {G}$}\) in the reciprocal lattice. The function \(f(x)\,  \delta (x-a)\) is the same as \(f(a)\,  \delta (x-a)\). They are both non-zero only at \(x=a\). 
+</p>
+<p>
+Remember that the Fourier transform of the lattice determines the change in wavevector when a wave interacts with it. We have shown that it is non-zero only when \({\bm k}={\bm k}_{\rm out}-{\bm k}_{\rm in}\) is equal to a reciprocal lattice vector: 
+</p>
+<div id="eq:scattering">
+<div class="eqnarrayid" id="a0000000100"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.24} {\bm k}_{\rm out}={\bm k}_{\rm in} + \mbox{$\bm {G}$}\; . \label{eq:scattering} 
+\end{align}
+</script>
+</div>
+<p>
+ When a wave scatters off a periodic lattice, its wavevector can only change by a reciprocal lattice vector. Eq.(<a class="ref" href="#eq:scattering">4.24</a>) is known as the <em>Laue equation</em>. 
+</p>
+</section><section class="subsection">
+<h3 id="a0000000101">4.4 A more general expression for the Reciprocal Lattice</h3>
+<p>
+The expression for the reciprocal lattice vectors we found in Eq.(<a class="ref" href="#eq:gvectors1">4.19</a>) assumed that the real space lattice was cuboidal, with primitive lattice vectors along the \(x\), \(y\) and \(z\) axes. We know that there are more complicated lattices, so we need a more general expression for the reciprocal lattice, which works when the primitive lattice vectors, \(\mbox{$\bm {a}$}_1\), \(\mbox{$\bm {a}$}_2\) and \(\mbox{$\bm {a}$}_3\), are not orthogonal. We could try to take the Fourier transform of the real space Bravais lattice, but instead we will use a trick which relies on the fact that the crystal is unchanged by spatial translations which correspond to real space lattice vectors, \(\mbox{$\bm {R}$}\): \(\rho (\mbox{$\bm {r}$}+\mbox{$\bm {R}$})=\rho (\mbox{$\bm {r}$})\). We write the real space structure as a three dimensional Fourier series 
+</p>
+<div id="a0000000102">
+<div class="eqnarrayid" id="a0000000103"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.25} \rho (\mbox{$\bm {r}$})=\sum _{\mbox{\scriptsize {\bf G}}} C_{\mbox{\scriptsize {\bf G}}} \,  e^{i {\mbox{\scriptsize {\bf G}}} \cdot \mbox{$\bm {r}$}}\; . 
+\end{align}
+</script>
+</div>
+<p>
+ Then 
+</p>
+<div id="a0000000104">
+<div class="eqnarrayid" id="a0000000105"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.26} \rho (\mbox{$\bm {r}$}+\mbox{$\bm {R}$}) =\sum _{\mbox{\scriptsize {\bf G}}} C_{\mbox{\scriptsize {\bf G}}} \,  e^{i {\mbox{\scriptsize {\bf G}}} \cdot (\mbox{$\bm {r}$}+\mbox{\scriptsize {\bf R}})} =\sum _{\mbox{\scriptsize {\bf G}}} C_{\mbox{\scriptsize {\bf G}}} \,  e^{i {\mbox{\scriptsize {\bf G}}} \cdot \mbox{$\bm {r}$}} e^{i {\mbox{\scriptsize {\bf G}}} \cdot {\mbox{\scriptsize {\bf R}}}}\; . 
+\end{align}
+</script>
+</div>
+<p>
+ However, these two expressions must be the same, so we require \(e^{i {\mbox{\scriptsize {\bf G}}} \cdot {\mbox{\scriptsize {\bf R}}}}=1\) for any \(\mbox{$\bm {R}$}\) in the real space lattice and any \(\mbox{$\bm {G}$}\) in the reciprocal space lattice. This means that the dot product \(\mbox{$\bm {G}$} \cdot \mbox{$\bm {R}$}\) must be an integer multiple of \(2 \pi \). 
+</p>
+<p>
+For the real space lattice, the most general \(\mbox{$\bm {R}$}\) is 
+</p>
+<div id="a0000000106">
+<div class="eqnarrayid" id="a0000000107"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.27} \mbox{$\bm {R}$} = n_1 \,  \mbox{$\bm {a}$}_1 + n_2 \,  \mbox{$\bm {a}$}_2 + n_3 \,  \mbox{$\bm {a}$}_3 \; , 
+\end{align}
+</script>
+</div>
+<p>
+ where \(n_1, n_2, n_3\) are integers. We can similarly define primitive lattice vectors, \(\mbox{$\bm {b}$}_1\), \(\mbox{$\bm {b}$}_2\) and \(\mbox{$\bm {b}$}_3\) for the reciprocal lattice and write 
+</p>
+<div id="eq:rlvs">
+<div class="eqnarrayid" id="a0000000108"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.28} \mbox{$\bm {G}$} = \nu _1 \,  \mbox{$\bm {b}$}_1 + \nu _2 \,  \mbox{$\bm {b}$}_2 + \nu _3 \,  \mbox{$\bm {b}$}_3 \; , \label{eq:rlvs} 
+\end{align}
+</script>
+</div>
+<p>
+ with \(\nu _1, \nu _2, \nu _3\) integers. We therefore require 
+</p>
+<div id="eq:dotprod">
+<div class="eqnarrayid" id="a0000000109"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.29} \mbox{$\bm {G}$}\cdot \mbox{$\bm {R}$}= (\nu _1 \,  \mbox{$\bm {b}$}_1 + \nu _2 \,  \mbox{$\bm {b}$}_2 + \nu _3 \,  \mbox{$\bm {b}$}_3) \cdot (n_1 \,  \mbox{$\bm {a}$}_1 + n_2 \,  \mbox{$\bm {a}$}_2 + n_3 \,  \mbox{$\bm {a}$}_3) \label{eq:dotprod} 
+\end{align}
+</script>
+</div>
+<p>
+ to be an integer multiple of \(2\pi \). 
+</p>
+<p>
+There are many choices for the primitive reciprocal lattice vectors, \(\mbox{$\bm {b}$}_1\), \(\mbox{$\bm {b}$}_2\) and \(\mbox{$\bm {b}$}_3\), which would satisfy Eq.(<a class="ref" href="#eq:dotprod">4.29</a>). We would expect this because we know that for the real space lattice there were many possible set sof primitive lattice vectors which gave the same lattice. We (following the standard approach) chose \(\mbox{$\bm {b}$}_1\) to be perpendicular to \(\mbox{$\bm {a}$}_2\) and \(\mbox{$\bm {a}$}_3\), so that \(\mbox{$\bm {b}$}_1 \cdot \mbox{$\bm {a}$}_2=0= \mbox{$\bm {b}$}_1 \cdot \mbox{$\bm {a}$}_3\). We also make \(\mbox{$\bm {b}$}_1 \cdot \mbox{$\bm {a}$}_1=2\pi \). Similarly, we make \(\mbox{$\bm {b}$}_2\) perpendicular to \(\mbox{$\bm {a}$}_1\) and \(\mbox{$\bm {a}$}_3\) and \(\mbox{$\bm {b}$}_2 \cdot \mbox{$\bm {a}$}_2=2\pi \), \(\mbox{$\bm {b}$}_3\) perpendicular to \(\mbox{$\bm {a}$}_1\) and \(\mbox{$\bm {a}$}_2\), \(\mbox{$\bm {b}$}_3 \cdot \mbox{$\bm {a}$}_3=2\pi \). Then our dot product Eq.(<a class="ref" href="#eq:dotprod">4.29</a>) becomes 
+</p>
+<div id="a0000000110">
+<div class="eqnarrayid" id="a0000000111"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.30} \mbox{$\bm {G}$}\cdot \mbox{$\bm {R}$}= 2\pi \nu _1 n_1 + 2 \pi \nu _2 n_2 + 2 \pi \nu _3 n_3 \; , 
+\end{align}
+</script>
+</div>
+<p>
+ which is an integer multiple of \(2\pi \), as required. The conditions which determine the primitive reciprocal lattice vectors can be summarised in the equation 
+</p>
+<div id="eq:prlv-condition">
+<div class="eqnarrayid" id="a0000000112"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.31} \mbox{$\bm {b}$}_i \cdot \mbox{$\bm {a}$}_j = 2 \pi \delta _{ij}\; . \label{eq:prlv-condition} 
+\end{align}
+</script>
+</div>
+<p>
+The easiest way to find a vector perpendicular to two others is to use the cross product. Since \(\mbox{$\bm {b}$}_1\) is to be perpendicular to \(\mbox{$\bm {a}$}_2\) and \(\mbox{$\bm {a}$}_3\), we can write \(\mbox{$\bm {b}$}_1=\alpha \,  (\mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3)\), where \(\alpha \) is some constant. The other condition for \(\mbox{$\bm {b}$}_1\) is \(\mbox{$\bm {b}$}_1 \cdot \mbox{$\bm {a}$}_1=2\pi \), which fixes \(\alpha \) according to \(\alpha \mbox{$\bm {a}$}_1 \cdot (\mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3)=2\pi \). Doing a similar thing for \(\mbox{$\bm {b}$}_2\) and \(\mbox{$\bm {b}$}_3\), we get expressions for our primitive reciprocal lattice vectors 
+</p>
+<div id="eq:prlvs">
+<div class="eqnarrayid" id="a0000000113"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.32} \mbox{$\bm {b}$}_1= 2 \pi \frac{\mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3}{\mbox{$\bm {a}$}_1 \cdot (\mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3)} \qquad \mbox{$\bm {b}$}_2= 2 \pi \frac{\mbox{$\bm {a}$}_3 \times \mbox{$\bm {a}$}_1}{\mbox{$\bm {a}$}_1 \cdot (\mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3)} \qquad \mbox{$\bm {b}$}_3= 2 \pi \frac{\mbox{$\bm {a}$}_1 \times \mbox{$\bm {a}$}_2}{\mbox{$\bm {a}$}_1 \cdot (\mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3)} \; . \label{eq:prlvs} 
+\end{align}
+</script>
+</div>
+<p>
+ Note that \(|\mbox{$\bm {a}$}_1 \cdot (\mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3)|\) is the volume of the real space unit cell, \(V_c\). Eqs.(<a class="ref" href="#eq:rlvs">4.28</a>,<a class="ref" href="#eq:prlvs">4.32</a>) define the reciprocal lattice corresponding to an arbitrary real space lattice. 
+</p>
+</section><section class="subsection">
+<h3 id="a0000000114">4.5 Examples of Reciprocal Lattices</h3>
+<p>
+We will now look at using Eq.(<a class="ref" href="#eq:prlvs">4.32</a>) to find the reciprocal lattices corresponding to some real space lattices. Let us start with a simple cubic lattice. We have already seen that the reciprocal lattice is another cubic lattice, but we will now show this using Eq.(<a class="ref" href="#eq:prlvs">4.32</a>). 
+</p>
+<p>
+For the simple cubic lattice, the real space lattice vectors are \(\mbox{$\bm {a}$}_1=a\, \hat{\bm x}\), \(\mbox{$\bm {a}$}_2=a\, \hat{\bm y}\) and \(\mbox{$\bm {a}$}_3=a\, \hat{\bm z}\), where \(a\) is the lattice constant. To work ot \(\mbox{$\bm {b}$}_1\) we need 
+</p>
+<div id="a0000000115">
+<div class="eqnarrayid" id="a0000000116"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.33} \mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3=a^2\, \hat{\bm y} \times \hat{\bm z} = a^2 \,  \hat{\bm x}\; . 
+\end{align}
+</script>
+</div>
+<p>
+ Then \(\mbox{$\bm {a}$}_1 \cdot (\mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3)= a^3 \,  \hat{\bm x} \cdot \hat{\bm x}=a^3\), the volume of the unit cell. Hence 
+</p>
+<div id="a0000000117">
+<div class="eqnarrayid" id="a0000000118"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.34} \mbox{$\bm {b}$}_1= 2 \pi \frac{\mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3}{|\mbox{$\bm {a}$}_1 \cdot (\mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3)|} = 2 \pi \frac{a^2 \,  \hat{\bm x}}{a^3} =\frac{2 \pi }{a} \,  \hat{\bm x}\; . 
+\end{align}
+</script>
+</div>
+<p>
+ Similarly, \(\mbox{$\bm {b}$}_2=(2\pi /a) \,  \hat{\bm y}\) and \(\mbox{$\bm {b}$}_3=(2\pi /a) \,  \hat{\bm z}\). This is the same result we found in Eq.(<a class="ref" href="#eq:rl-cuboid">4.20</a>), with \(L_x=L_y=L_z=a\) 
+</p>
+<p>
+For a more complicated example, consider a face-centred cubic lattice, with 
+</p>
+<div id="a0000000119">
+<div class="eqnarrayid" id="a0000000120"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.35} \mbox{$\bm {a_1}$}=\frac{a}{2}(\hat{\bm y}+\hat{\bm z}) \qquad \mbox{$\bm {a_2}$}=\frac{a}{2}(\hat{\bm x}+\hat{\bm z}) \qquad \mbox{$\bm {a_3}$}=\frac{a}{2} \,  (\hat{\bm x}+\hat{\bm y})\; . 
+\end{align}
+</script>
+</div>
+<p>
+ Then 
+</p>
+<div id="a0000000121">
+<div class="eqnarrayid" id="a0000000122"></div><script type="math/tex; mode=display">
+\begin{align}
+ \mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3& =\left(\frac{a}{2}\right)^2  \begin{vmatrix}  \hat{\bm x} 
+
+&  \hat{\bm y} 
+
+&  \hat{\bm z} 
+
+\\ 1 
+
+&  0 
+
+&  1 
+
+\\ 1 
+
+&  1 
+
+&  0 
+
+\end{vmatrix}  =\frac{a^2}{4}(-\hat{\bm x}+\hat{\bm y}+\hat{\bm z}) \nonumber \\ 
+\mbox{$\bm {a}$}_3 \times \mbox{$\bm {a}$}_1& =\left(\frac{a}{2}\right)^2  \begin{vmatrix}  \hat{\bm x} 
+
+&  \hat{\bm y} 
+
+&  \hat{\bm z} 
+
+\\ 1 
+
+&  1 
+
+&  0 
+
+\\ 0 
+
+&  1 
+
+&  1 
+
+\end{vmatrix}  =\frac{a^2}{4}\, (\hat{\bm x}-\hat{\bm y}+\hat{\bm z}) \nonumber \\ 
+\tag{4.36}\mbox{$\bm {a}$}_1 \times \mbox{$\bm {a}$}_2& =\left(\frac{a}{2}\right)^2  \begin{vmatrix}  \hat{\bm x} 
+
+&  \hat{\bm y} 
+
+&  \hat{\bm z} 
+
+\\ 0 
+
+&  1 
+
+&  1 
+
+\\ 1 
+
+&  0 
+
+&  1 
+
+\end{vmatrix}  =\frac{a^2}{4}(\hat{\bm x}+\hat{\bm y}-\hat{\bm z})\; . 
+\end{align}
+</script>
+</div>
+<p>
+ The unit cell volume is 
+</p>
+<div id="a0000000123">
+<div class="eqnarrayid" id="a0000000124"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.37} \mbox{$\bm {a}$}_1 \cdot (\mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3)= \frac{a^3}{8} \,  (\hat{\bm y}+\hat{\bm z}) \cdot (-\hat{\bm x}+\hat{\bm y}+\hat{\bm z})= \frac{a^3}{4}\; . 
+\end{align}
+</script>
+</div>
+<p>
+ Thus the primitive reciprocal lattice vectors are 
+</p>
+<div id="a0000000125">
+<div class="eqnarrayid" id="a0000000126"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.38} \mbox{$\bm {b_1}$}=\frac{2\pi }{a}(-\hat{\bm x}+\hat{\bm y}+\hat{\bm z}) \qquad \mbox{$\bm {b_2}$}=\frac{2\pi }{a}(\hat{\bm x}-\hat{\bm y}+\hat{\bm z}) \qquad \mbox{$\bm {b_3}$}=\frac{2\pi }{a}(\hat{\bm x}+\hat{\bm y}-\hat{\bm z})\; . 
+\end{align}
+</script>
+</div>
+<p>
+ This is a body-centred cubic lattice. 
+</p>
+<p>
+For two dimensional lattices, we only have two primitive lattice vectors in both the real and reciprocal lattice. To use our formula, we invent a third real space lattice vector \(\mbox{$\bm {a}$}_3 =\hat{\bm x}\) and drop \(\mbox{$\bm {b}$}_3\) (which would also be in the \(\hat{\bm z}\) direction). We get 
+</p>
+<div id="eq:prlvs-2d">
+<div class="eqnarrayid" id="a0000000127"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.39} \mbox{$\bm {b}$}_1= 2 \pi \frac{\mbox{$\bm {a}$}_2 \times \hat{\bm z}}{\hat{\bm z}\cdot (\mbox{$\bm {a}$}_1 \times \mbox{$\bm {a}$}_2)} \qquad \mbox{$\bm {b}$}_2= 2 \pi \frac{\hat{\bm z} \times \mbox{$\bm {a}$}_1}{\hat{\bm z}\cdot (\mbox{$\bm {a}$}_1 \times \mbox{$\bm {a}$}_2)} \qquad \; . \label{eq:prlvs-2d} 
+\end{align}
+</script>
+</div>
+<p>
+ The area of the unit cell is \(=|\mbox{$\bm {a}$}_1 \times \mbox{$\bm {a}$}_2|=|\hat{\bm z} \cdot (\mbox{$\bm {a}$}_1 \times \mbox{$\bm {a}$}_2)|\). 
+</p>
+<p>
+<br/>
+</p>
+<p>
+<span class="vspace" style="height: -7.227pt"></span>
+</p>
+<div class="centered"> <div class="mbox" id="a0000000128" style="width: "> <img alt="\includegraphics[width=0.6\textwidth ]{./figures/reciprocal2d-ex1.png}" src="images/img-0062.png" style="width:281.853pt"/> </div> </div>
+<p>
+<span class="vspace" style="height: -36.135pt"></span>
+</p>
+<p>
+As an example, consider the lattice with \(\mbox{$\bm {a}$}_1=a(2\, \hat{\bm x}+\hat{\bm y})\) and \(\mbox{$\bm {a}$}_2=a(-\hat{\bm x}+\hat{\bm y})\). We need the cross products 
+</p>
+<div id="a0000000129">
+<div class="eqnarrayid" id="a0000000130"></div><script type="math/tex; mode=display">
+\begin{align}
+ \mbox{$\bm {a}$}_2 \times \hat{\bm z}& =a \begin{vmatrix}  \hat{\bm x} 
+
+&  \hat{\bm y} 
+
+&  \hat{\bm z} 
+
+\\ -1 
+
+&  1 
+
+&  0 
+
+\\ 0 
+
+&  0 
+
+&  1 
+
+\end{vmatrix} =a(\hat{\bm x}+\hat{\bm y}) \nonumber \\ 
+\hat{\bm z} \times \mbox{$\bm {a}$}_1& =a \begin{vmatrix}  \hat{\bm x} 
+
+&  \hat{\bm y} 
+
+&  \hat{\bm z} 
+
+\\ 0 
+
+&  0 
+
+&  1 
+
+\\ 2 
+
+&  1 
+
+&  0 
+
+\end{vmatrix} =a(-\hat{\bm x}+2\,  \hat{\bm y}) \nonumber \\ 
+\tag{4.40}\mbox{$\bm {a}$}_1 \times \mbox{$\bm {a}$}_2& =a^2 \begin{vmatrix}  \hat{\bm x} 
+
+&  \hat{\bm y} 
+
+&  \hat{\bm z} 
+
+\\ 2 
+
+&  1 
+
+&  0 
+
+\\ -1 
+
+&  1 
+
+&  0 
+
+\end{vmatrix} =3a^2 \,  \hat{\bm z} \quad \Rightarrow \quad \hat{\bm z}\cdot (\mbox{$\bm {a}$}_1 \times \mbox{$\bm {a}$}_2)=3 a^2 \; . 
+\end{align}
+</script>
+</div>
+<p>
+ So 
+</p>
+<div id="a0000000131">
+<div class="eqnarrayid" id="a0000000132"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.41} \mbox{$\bm {b}$}_1=\frac{2\pi }{3a}(\hat{\bm x}+\hat{\bm y}) \qquad \mbox{$\bm {b}$}_1=\frac{2\pi }{3a}(-\hat{\bm x}+2\, \hat{\bm y}) \; . 
+\end{align}
+</script>
+</div>
+<p>
+The Wigner-Seitz unit cell of the reciprocal lattice is known as the (first) <em>Brillouin zone</em>. Though we will not be working with it in this course, the Brillouin zone is very important ingredient in the description of waves in crystals. We use it, for example, when discussing the band structure of electrons in a crystalline solid. 
+</p>
+</section><section class="subsection">
+<h3 id="a0000000133">4.6 The Reciprocal Lattice and Real Space Lattice Planes</h3>
+<p>
+<b class="bf">The reciprocal lattice vector \(\mbox{$\bm {G}$}_{hkl}=h \mbox{$\bm {b}$}_1 +k \mbox{$\bm {b}$}_2 + l \mbox{$\bm {b}$}_3\) is perpendicular to the \( \{ hkl\} \) real space lattice planes. The separation of these planes is \(2\pi /|G_{hkl}|\).</b>
+</p>
+<div class="centered"> <div class="mbox" id="a0000000134" style="width: "> <img alt="\includegraphics[width=0.6\textwidth ]{./figures/planes3d-normal.png}" src="images/img-0063.png" style="width:281.853pt"/> </div> </div>
+<p>
+For any set of lattice planes \(\{ hkl\} \), one will always pass through the origin. Consider the plane adjacent to this. As we have seen, it will intersect the lattice vector \(\mbox{$\bm {a}$}_1\) at a fraction \(h^{-1}\) of its length. Thus the vector \(h^{-1}\mbox{$\bm {a}$}_1\) leads to a point \(A_1\) lying on the plane. Similarly we can identify points on the plane \(A_2\) and \(A_3\) corresponding to vectors \(k^{-1} \mbox{$\bm {a}$}_2\) and \(l^{-1} \mbox{$\bm {a}$}_3\). This allows us to write down two vectors which lie in the plane: 
+</p>
+<div id="a0000000135">
+<div class="eqnarrayid" id="a0000000136"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.42} \overrightarrow {A_1A_2}=\frac1k \mbox{$\bm {a}$}_2-\frac1h \mbox{$\bm {a}$}_1 \quad \mbox{and} \quad \overrightarrow {A_1A_3}=\frac1l \mbox{$\bm {a}$}_3-\frac1h \mbox{$\bm {a}$}_1 \; . 
+\end{align}
+</script>
+</div>
+<p>
+ The cross product of these two vectors will be perpendicular to the plane. This is the vector 
+</p>
+<div id="a0000000137">
+<div class="eqnarrayid" id="a0000000138"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.43} \mbox{$\bm {n}$}=\overrightarrow {A_1A_2}\times \overrightarrow {A_1A_3} =\left(\frac1k \mbox{$\bm {a}$}_2-\frac1h \mbox{$\bm {a}$}_1\right)\times \left(\frac1l \mbox{$\bm {a}$}_3-\frac1h \mbox{$\bm {a}$}_1\right) =\frac{1}{hkl}( h \mbox{$\bm {a}$}_2 \times \mbox{$\bm {a_3}$} -k \mbox{$\bm {a}$}_1 \times \mbox{$\bm {a_3}$} -l \mbox{$\bm {a}$}_2 \times \mbox{$\bm {a_1}$} )\; , 
+\end{align}
+</script>
+</div>
+<p>
+ as \(\mbox{$\bm {a}$}_1 \times \mbox{$\bm {a_1}$}=0\). We now use Eq.(<a class="ref" href="#eq:prlvs">4.32</a>) to write the cross products in terms of the primitive reciprocal lattice vectors. Using \(V_c=\mbox{$\bm {a}$}_1 \cdot (\mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3)\), we get 
+</p>
+<div id="a0000000139">
+<div class="eqnarrayid" id="a0000000140"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.44} \mbox{$\bm {n}$} =\frac{1}{hkl}\frac{V_c}{2\pi }( h \mbox{$\bm {b}$}_1 +k \mbox{$\bm {b}$}_2 + l \mbox{$\bm {b}$}_3) \; . 
+\end{align}
+</script>
+</div>
+<p>
+ So the reciprocal lattice vector \(\mbox{$\bm {G}$}_{hkl}=h \mbox{$\bm {b}$}_1 +k \mbox{$\bm {b}$}_2 + l \mbox{$\bm {b}$}_3\) is perpendicular to the planes in the set \(\{ hkl\} \). Any integer multiple of this \(\mbox{$\bm {G}$}\) is also a reciprocal lattice vector, and also perpendicular to the planes, but this the smallest such reciprocal lattice vector. However, recall that there is a sign ambiguity in the Miller indicies – the plane is the same if we multiply them all by \(-1\). \(\mbox{$\bm {G}$}_{hkl}\) is perpendicular to the plane, but it could be pointing in either direction. 
+</p>
+<p>
+Note also that this result depends on the particular choice we made for the primitive reciprocal lattice vectors – it is the reason for making that choice. If you make a different choice, there will still be a set of reciprocal lattice vectors perpendicular to the \(\{ hkl\} \) planes, but they will not be multiples of \(=h \mbox{$\bm {b}$}_1 +k \mbox{$\bm {b}$}_2 + l \mbox{$\bm {b}$}_3\). So always use the standard expression for the primitive reciprocal lattice vectors, Eq.(<a class="ref" href="#eq:prlvs">4.32</a>), or Eq.(<a class="ref" href="#eq:prlvs-2d">4.39</a>) in two dimensions. 
+</p>
+<div class="centered"> <div class="mbox" id="a0000000141" style="width: "> <img alt="\includegraphics[width=0.4\textwidth ]{./figures/planes3d-separation.png}" src="images/img-0064.png" style="width:187.90200000000002pt"/> </div> </div>
+<p>
+We can also get an expression for the spacing, \(d_{hkl}\) between the lattice planes in terms of \(\mbox{$\bm {G}$}=\mbox{$\bm {G}$}_{hkl}\). Looking at the triangle \(A_1OP\), we see that 
+</p>
+<div id="a0000000142">
+<div class="eqnarrayid" id="a0000000143"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.45} \cos {\theta }=\frac{d}{OA_1}=\frac{d}{|h^{-1} \mbox{$\bm {a}$}_1|}\; . 
+\end{align}
+</script>
+</div>
+<p>
+ Taking the dot product of \(\overrightarrow {OA_1}\) and \(\mbox{$\bm {G}$}\): 
+</p>
+<div id="a0000000144">
+<div class="eqnarrayid" id="a0000000145"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.46} \overrightarrow {OA_1} \cdot \mbox{$\bm {G}$} = h^{-1} \mbox{$\bm {a}$}_1 \cdot \mbox{$\bm {G}$} =|h^{-1} \mbox{$\bm {a}$}_1| |\mbox{$\bm {G}$}| \cos {\theta }\; . 
+\end{align}
+</script>
+</div>
+<p>
+ Comparing these two expressions, we see that 
+</p>
+<div id="a0000000146">
+<div class="eqnarrayid" id="a0000000147"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.47} d=\frac{h^{-1} \mbox{$\bm {a}$}_1 \cdot \mbox{$\bm {G}$}}{|\mbox{$\bm {G}$}|}\; . 
+\end{align}
+</script>
+</div>
+<p>
+ Remembering that \(\mbox{$\bm {G}$}=h \mbox{$\bm {b}$}_1 +k \mbox{$\bm {b}$}_2 + l \mbox{$\bm {b}$}_3\), 
+</p>
+<div id="a0000000148">
+<div class="eqnarrayid" id="a0000000149"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.48} h^{-1} \mbox{$\bm {a}$}_1 \cdot \mbox{$\bm {G}$}=\mbox{$\bm {a}$}_1 \cdot \mbox{$\bm {b}$}_1 = 2\pi \; , 
+\end{align}
+</script>
+</div>
+<p>
+ where we use (Eq.(<a class="ref" href="#eq:prlv-condition">4.31</a>)) \(\mbox{$\bm {a}$}_1 \cdot \mbox{$\bm {b}$}_2 =\mbox{$\bm {a}$}_1 \cdot \mbox{$\bm {b}$}_3=0\). We now have the result that the separation of the \(\{ hkl\} \) planes is 
+</p>
+<div id="eq:planesep">
+<div class="eqnarrayid" id="a0000000150"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.49} d_{hkl}=\frac{2\pi }{|\mbox{$\bm {G}$}_{hkl}|}\; , \label{eq:planesep} 
+\end{align}
+</script>
+</div>
+<p>
+ where \(\mbox{$\bm {G}$}_{hkl}=h \mbox{$\bm {b}$}_1 +k \mbox{$\bm {b}$}_2 + l \mbox{$\bm {b}$}_3\). 
+</p>
+</section><section class="subsection">
+<h3 id="a0000000151">4.7 The Reciprocal Lattice and Diffraction</h3>
+<p>
+We have seen that the change in wavevector when a wave is diffracted must be a reciprocal lattice vector, Eq.(<a class="ref" href="#eq:scattering">4.24</a>): 
+</p>
+<div id="eq:diffg">
+<div class="eqnarrayid" id="a0000000152"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.50} {\bm k}_{\rm out}={\bm k}_{\rm in} + \mbox{$\bm {G}$}\; . \label{eq:diffg} 
+\end{align}
+</script>
+</div>
+<p>
+ However, diffraction is also an elastic process, so there is no change in the frequency of the wave, which means that the magnitudes \(|{\bm k}_{\rm out}|\) and \(|{\bm k}_{\rm in}|\) must be the same. This means that 
+</p>
+<div id="a0000000153">
+<div class="eqnarrayid" id="a0000000154"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.51} {\bm k}_{\rm in}\cdot {\bm k}_{\rm in}={\bm k}_{\rm out}\cdot {\bm k}_{\rm out}= ({\bm k}_{\rm in} + \mbox{$\bm {G}$})\cdot ({\bm k}_{\rm in} + \mbox{$\bm {G}$}) ={\bm k}_{\rm in}\cdot {\bm k}_{\rm in}+\mbox{$\bm {G}$}\cdot \mbox{$\bm {G}$}+ 2{\bm k}_{\rm in}\cdot \mbox{$\bm {G}$} \; . 
+\end{align}
+</script>
+</div>
+<p>
+ So, for diffraction to occur, we require 
+</p>
+<div id="eq:diffcon">
+<div class="eqnarrayid" id="a0000000155"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.52} {\bm k}_{\rm in}\cdot \mbox{$\bm {G}$}=-\frac12 \mbox{$\bm {G}$} \cdot \mbox{$\bm {G}$}\; . \label{eq:diffcon} 
+\end{align}
+</script>
+</div>
+<p>
+ Using \({\bm k}_{\rm in}={\bm k}_{\rm out} - \mbox{$\bm {G}$}\), we can re-write this as 
+</p>
+<div id="a0000000156">
+<div class="eqnarrayid" id="a0000000157"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.53} {\bm k}_{\rm out}\cdot \mbox{$\bm {G}$}=\frac12 \mbox{$\bm {G}$} \cdot \mbox{$\bm {G}$}\; . 
+\end{align}
+</script>
+</div>
+<p>
+ So the condition for diffraction by the reciprocal lattice vector \(\mbox{$\bm {G}$}\) can be written 
+</p>
+<div id="a0000000158">
+<div class="eqnarrayid" id="a0000000159"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.54} {\bm k}_{\rm in}\cdot \mbox{$\bm {G}$}=-{\bm k}_{\rm out}\cdot \mbox{$\bm {G}$}\; . 
+\end{align}
+</script>
+</div>
+<p>
+ As \(|{\bm k}_{\rm out}|=|{\bm k}_{\rm in}|\), the angles that the incoming and outgoing wavevectors make with \(\mbox{$\bm {G}$}\) must be the same. 
+</p>
+<div class="centered"> <div class="mbox" id="a0000000160" style="width: "> <img alt="\includegraphics[width=0.4\textwidth ]{./figures/bragg-g.png}" src="images/img-0065.png" style="width:187.90200000000002pt"/> </div> </div>
+<p>
+We now show that this condition is equivalent to Bragg’s law for diffraction from the plane perpendicular to \(\mbox{$\bm {G}$}\), that is \(2d_{hkl} \sin {\theta }=n \lambda \). 
+</p>
+<p>
+Starting from Eq.(<a class="ref" href="#eq:diffcon">4.52</a>), note that \({\bm k}_{\rm in}\cdot \mbox{$\bm {G}$}=-|{\bm k}_{\rm in}||\mbox{$\bm {G}$}|\cos {\phi }\), where \(\phi \) is the angle between the two vectors. But \(\phi \) is the complement of the angle \(\theta \), so \(\cos {\phi }=\sin {\theta }\). We can thus write Eq.(<a class="ref" href="#eq:diffcon">4.52</a>) as 
+</p>
+<div id="a0000000161">
+<div class="eqnarrayid" id="a0000000162"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.55} -|{\bm k}_{\rm in}||\mbox{$\bm {G}$}|\sin {\theta }=-\frac12 |\mbox{$\bm {G}$}|^2\; . 
+\end{align}
+</script>
+</div>
+<p>
+ We simplify using \(|{\bm k}_{\rm in}|= 2\pi /\lambda \). The vector \(\mbox{$\bm {G}$}=n \mbox{$\bm {G}$}_{hkl}\), an integer multiple, \(n\), of the smallest reciprocal lattice vector perpendicular to the plane, where \(n\) may be negative or positive. We can thus use Eq.(<a class="ref" href="#eq:planesep">4.49</a>) to write \(|\mbox{$\bm {G}$}|=|n| \times 2\pi /d_{hkl}\). Thus 
+</p>
+<div id="a0000000163">
+<div class="eqnarrayid" id="a0000000164"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.56} \frac{2\pi }{\lambda } \sin {\theta }=\frac12 |n| \frac{2\pi }{d_{hkl}} \quad \Rightarrow \quad 2d_{hkl} \sin {\theta }=|n| \lambda \; . 
+\end{align}
+</script>
+</div>
+<p>
+ This is Bragg’s law again, Eq.(<a class="ref" href="#eq:bragg">3.8</a>), because we took \(n\) to be a positive integer in that equation. However, in terms of the reciprocal lattice vector causing the diffraction \(\mbox{$\bm {G}$}=n \mbox{$\bm {G}$}_{hkl}\), \(n=\pm 1\) for first order, \(\pm 2\) for second order, etc. 
+</p>
+<p>
+Although we have shown that Eq.(<a class="ref" href="#eq:diffcon">4.52</a>) is equivalent to Bragg’s law, it is a more useful formula when we are trying to work with wavevector directions defined relative to fixed axes, rather than lattice planes. Suppose, for example, we have an incoming wavevevector \(\mbox{$\bm {k}$}_{\rm in}=\frac{2\pi }{\lambda } \,  \hat{\bm x}\), and we want to find the wavelength \(\lambda \) which gives first order \((n=1)\) diffraction off the \(\{ \overline{1}21\} \) set of planes in a cubic lattice. The reciprocal lattice vector normal to these planes is 
+</p>
+<div id="eq:g-first-order">
+<div class="eqnarrayid" id="a0000000165"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.57} \mbox{$\bm {G}$}=\mbox{$\bm {G}$}_{hkl}=\mbox{$\bm {G}$}_{\overline{1}21}=- \mbox{$\bm {b}$}_1 +2 \,  \mbox{$\bm {b}$}_2 + \mbox{$\bm {b}$}_3 =\frac{2\pi }{a}(-\hat{\bm x}+ 2\, \hat{\bm y} + \hat{\bm z})\; , \label{eq:g-first-order} 
+\end{align}
+</script>
+</div>
+<p>
+ where \(a\) is the lattice constant. We then get 
+</p>
+<div id="a0000000166">
+<div class="eqnarrayid" id="a0000000167"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.58} \mbox{$\bm {k}$}_{\rm in} \cdot \mbox{$\bm {G}$}=-\frac{2 \pi }{\lambda } \frac{2 \pi }{a} \quad \mbox{and} \quad -\frac12 \mbox{$\bm {G}$} \cdot \mbox{$\bm {G}$}=-\frac12 \left(\frac{2\pi }{a}\right)^2 \times 6\; . 
+\end{align}
+</script>
+</div>
+<p>
+ Hence Eq.(<a class="ref" href="#eq:diffcon">4.52</a>) tells us that 
+</p>
+<div id="a0000000168">
+<div class="eqnarrayid" id="a0000000169"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.59} \frac{2 \pi }{\lambda }=3 \times \frac{2\pi }{a}\; , 
+\end{align}
+</script>
+</div>
+<p>
+ so \(\lambda =a/3\). We can also work out the direction of the outgoing wave. Its wavevector is (using \(a=3 \lambda \)) 
+</p>
+<div id="eq:outgoing">
+<div class="eqnarrayid" id="a0000000170"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.60} \label{eq:outgoing} \mbox{$\bm {k}$}_{\rm out}=\mbox{$\bm {k}$}_{\rm in} + \mbox{$\bm {G}$}=\frac{2\pi }{\lambda } \,  \hat{\bm x} \,  + \,  \frac{2\pi }{\lambda } \frac13 (-\hat{\bm x}+ 2\, \hat{\bm y} + \hat{\bm z}) = \frac{2\pi }{\lambda } \frac13 (2\, \hat{\bm x}+ 2\, \hat{\bm y} + \hat{\bm z})\; . 
+\end{align}
+</script>
+</div>
+<p>
+ It is a good check that \(|\mbox{$\bm {k}$}_{\rm out}|=|\mbox{$\bm {k}$}_{\rm in}|\). 
+</p>
+<p>
+Suppose instead we had decided to describe these planes the equivalent alternative Miller indicies \(\{ 1\overline{2}\, \overline{1}\} \). We would then have found that 
+</p>
+<div id="a0000000171">
+<div class="eqnarrayid" id="a0000000172"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{4.61} \mbox{$\bm {G}$}_{hkl}=\mbox{$\bm {G}$}_{1\overline{2}\, \overline{1}}= \frac{2\pi }{a}(\hat{\bm x}- 2\, \hat{\bm y} - \hat{\bm z})\; , 
+\end{align}
+</script>
+</div>
+<p>
+ If we had just used \(\mbox{$\bm {G}$}=\mbox{$\bm {G}$}_{hkl}\) again, \(\mbox{$\bm {k}$}_{\rm in} \cdot \mbox{$\bm {G}$}\) would have turned out positive and and \(-\frac12 \mbox{$\bm {G}$} \cdot \mbox{$\bm {G}$}\) negative, so we would not have been able to satisfy Eq.(<a class="ref" href="#eq:diffcon">4.52</a>). In that case, we have to chose the other possibility \(n=-1\) for first order diffraction, so the correct reciprocal lattice vector is \(\mbox{$\bm {G}$}=-\mbox{$\bm {G}$}_{hkl}\). That gives the same \(\mbox{$\bm {G}$}\) as Eq.(<a class="ref" href="#eq:g-first-order">4.57</a>), restoring the necessary negative sign. It is important then to remember that sign when working out \(\mbox{$\bm {k}$}_{\rm out}\) in Eq.(<a class="ref" href="#eq:outgoing">4.60</a>). 
+</p>
+</section><section class="subsection">
+<h3 id="a0000000173">4.8 Reciprocal Lattice Summary</h3>
+<p>
+There is quite a lot of Fourier theory in this section, which you should understand, but you do not have to be able to reproduce it. The main results are: 
+</p>
+<ol class="enumerate" id="a0000000174">
+<li id="a0000000175" value="1">
+<p>
+The reciprocal lattice is another Bravais lattice which is the Fourier transform of the real space lattice. 
+</p>
+</li>
+<li id="a0000000176" value="2">
+<p>
+We define the primitive reciprocal lattice vectors, \(\mbox{$\bm {b}$}_1\), \(\mbox{$\bm {b}$}_2\) and \(\mbox{$\bm {b}$}_3\) by the relationship \(\mbox{$\bm {b}$}_i \cdot \mbox{$\bm {a}$}_j = 2 \pi \delta _{ij}\). This leads to 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  \mbox{$\bm {b}$}_1= 2 \pi \frac{\mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3}{|\mbox{$\bm {a}$}_1 \cdot (\mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3)|} \qquad \mbox{$\bm {b}$}_2= 2 \pi \frac{\mbox{$\bm {a}$}_3 \times \mbox{$\bm {a}$}_1}{|\mbox{$\bm {a}$}_1 \cdot (\mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3)|} \qquad \mbox{$\bm {b}$}_3= 2 \pi \frac{\mbox{$\bm {a}$}_1 \times \mbox{$\bm {a}$}_2}{|\mbox{$\bm {a}$}_1 \cdot (\mbox{$\bm {a}$}_2 \times \mbox{$\bm {a}$}_3)|} \; . \end{align*}</script></span>
+</li>
+<li id="a0000000177" value="3">
+<p>
+The reciprocal lattice vector \(\mbox{$\bm {G}$}_{hkl}=h \mbox{$\bm {b}$}_1 +k \mbox{$\bm {b}$}_2 + l \mbox{$\bm {b}$}_3\) is perpendicular to the planes with Miller indicies \(\{ hkl\} \). The separation of these planes is given by \(d_{hkl}=2\pi /|\mbox{$\bm {G}$}_{hkl}|\). 
+</p>
+</li>
+<li id="a0000000178" value="4">
+<p>
+When a wave diffracts in a lattice, its wavevector can only change by a reciprocal lattice vector: \({\bm k}_{\rm out}={\bm k}_{\rm in}+\mbox{$\bm {G}$}\). Applying the condition that the frequency is unchanged in diffraction then requires 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  {\bm k}_{\rm in}\cdot \mbox{$\bm {G}$}=-{\bm k}_{\rm out}\cdot \mbox{$\bm {G}$}=-\frac12 \mbox{$\bm {G}$}\cdot \mbox{$\bm {G}$} \; . \end{align*}</script></span>
+</li>
+<li id="a0000000179" value="5">
+<p>
+The reciprocal space picture gives the same diffraction condition as Bragg’s law, \(2d_{hkl} \sin {\theta }=n \lambda \). 
+</p>
+</li>
+</ol>
+<p>
+<br/>
+</p>
+</section>
+</section><section class="section">
+<h2 id="a0000000180">5 More about Diffraction</h2>
+<section class="subsection">
+<h3 id="a0000000181">5.1 The Basis</h3>
+<p>
+So far we have worked out only the directions in which diffraction occurs, but not considered the intensity of the resulting peaks in the diffraction pattern. The directions tell us about the Bravais lattice, while the intensities contain information about the basis, so they are essential to determining the full crystal structure. 
+</p>
+<p>
+We have seen, Eq.(<a class="ref" href="#eq:fourtran">4.18</a>), that the amplitude of the diffraction peak is given by the Fourier transform of the basis, Eq.(<a class="ref" href="#eq:fourier-basis">4.22</a>), at the corresponding wavevector \(\mbox{$\bm {G}$}\) 
+</p>
+<div id="a0000000182">
+<div class="eqnarrayid" id="a0000000183"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{5.1} C({\bm G})=\frac{1}{V_c} \int _{\mbox{\scriptsize all space}} \kern -2em d^3\mbox{$\bm {r}$} \,  \rho _{\rm basis}(\mbox{$\bm {r}$})\,  e^{-i {\mbox{\scriptsize {\bf G}}} \cdot {\mbox{\scriptsize {\bf r}}}} \; . 
+\end{align}
+</script>
+</div>
+<p>
+ By measuring the strengths of the peaks, we should be able to determine the basis, \(\rho _{\rm basis}(\mbox{$\bm {r}$})\), and hence the full crystal structure. There are two problems. The first is that, unless working at very short wavelengths, we only see diffraction corresponding to a few values of \(\mbox{$\bm {G}$}\), so we know only a few Fourier components of \(\rho _{\rm basis}(\mbox{$\bm {r}$})\). This means the reconstruction will be at low resolution. The second is that we can only measure the intensity of the peak, \(|C(\mbox{$\bm {G}$})|^2\), so we have no information about the phase of \(C(\mbox{$\bm {G}$})\), which is a complex number. This makes it impossible simply to perform the inverse of the Fourier transform, and more complicated computational methods are required. This is known as the <em>phase problem</em> in crytallography. 
+</p>
+<p>
+Here we will consider a very simple model of the basis, picturing it as a set of Dirac delta functions, which correspond, at low resolution, to the atoms which make up the basis. We thus have 
+</p>
+<div id="a0000000184">
+<div class="eqnarrayid" id="a0000000185"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{5.2} \rho _{\rm basis}(\mbox{$\bm {r}$})=\sum _{i=1}^n f_i \,  \delta ^3(\mbox{$\bm {r}$}-\mbox{$\bm {r}$}_i)\; , 
+\end{align}
+</script>
+</div>
+<p>
+ where the \(\mbox{$\bm {r}$}_i\) are the locations of the \(n\) atoms in the basis. The \(f_i\) are the scattering amplitudes for the atoms. Using this, we get 
+</p>
+<div id="a0000000186">
+<div class="eqnarrayid" id="a0000000187"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{5.3} C(\mbox{$\bm {G}$})=\frac{1}{V_c} \sum _i f_i \int d^3\mbox{$\bm {r}$} \,  \delta ^3(\mbox{$\bm {r}$}-\mbox{$\bm {r}$}_i)\,  e^{-i {\mbox{\scriptsize {\bf G}}} \cdot {\mbox{\scriptsize {\bf r}}}} = \frac{1}{V_c} \sum _i f_i e^{-i {\mbox{\scriptsize {\bf G}}} \cdot {\mbox{\scriptsize {\bf r}}}_i} \; . 
+\end{align}
+</script>
+</div>
+<p>
+ Remembering that we only know about \(C(\mbox{$\bm {G}$})\) at points on the reciprocal lattice, \(\mbox{$\bm {G}$}_{hkl}=h\, \mbox{$\bm {b}$}_1+k\, \mbox{$\bm {b}$}_2+l\, \mbox{$\bm {b}$}_3\), we define the <em>structure factor</em> \(f_{hkl}\) by 
+</p>
+<div id="a0000000188">
+<div class="eqnarrayid" id="a0000000189"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{5.4} f_{hkl}=\sum _i f_i e^{-i {\mbox{\scriptsize {${\bm G}_{hkl}$}}} \cdot {\mbox{\scriptsize {\bf r}}}_i} \; . 
+\end{align}
+</script>
+</div>
+<p>
+ The intensity of the diffracted peaks is then proportional to \(|f_{hkl}|^2\). 
+</p>
+<p>
+An important application of the structure factor is to identify what diffraction actually occurs when we use a conventional unit cell rather than one which is primitive. Consider the case of a body centred cubic lattice, where the conventional cubic unit cell contains two identical atoms, one at the origin, the other at \(\mbox{$\bm {r}$}=\frac{a}{2}(\hat{\bm x} +\hat{\bm y}+\hat{\bm z})\). Using \(\mbox{$\bm {G}$}=\frac{2\pi }{a}(h\,  \hat{\bm x} + k\,  \hat{\bm y} + l\,  \hat{\bm z} )\), for first order diffraction the structure factor is 
+</p>
+<div id="a0000000190">
+<div class="eqnarrayid" id="a0000000191"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{5.5} f_{hkl}=f \left( 1 + e^{-i \pi (h+k+l)}\right)\; , 
+\end{align}
+</script>
+</div>
+<p>
+ where \(f\) is the single atom scattering amplitude. If \(h+k+l\) is odd, the exponent evaluates to \(-1\), so \(f_{hkl}=0\). This is an example of a <em>forbidden order</em>. It occurs because the conventional unit cell contains sets of planes which do not pass through the body-centre lattice site, and are thus not true lattice planes. This is the price we pay for using the conventional unit cell – it makes some of the maths easier, because the primitive lattice vectors are orthogonal, but we have to check the structure factor to determine which orders of diffraction actually occur. 
+</p>
+</section><section class="subsection">
+<h3 id="a0000000192">5.2 Finite Structures</h3>
+<p>
+The diffraction theory we have developed assumes an infinite lattice, but real structures will always be finite. When the structure is large, this is not important, but for small structures we need to account for the finite size. We should expect that the diffraction peaks will broaden in angle – you know that for a finite diffraction grating there is an angular spread, which determines the resolution. 
+</p>
+<p>
+It is easy, mathematically, to transform an infinite structure to one which is finite. We simply multiply the infinite structure density, \(\rho _\infty (\mbox{$\bm {r}$})\), by a shape function, \(s(\mbox{$\bm {r}$})\), which is equal to one inside the finite structure and zero outside: 
+</p>
+<div id="a0000000193">
+<div class="eqnarrayid" id="a0000000194"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{5.6} \rho (\mbox{$\bm {r}$})=s(\mbox{$\bm {r}$}) \, \rho _\infty (\mbox{$\bm {r}$})\; . 
+\end{align}
+</script>
+</div>
+<p>
+ We can now use the convolution theorem: the Fourier transform of a product of two functions is equal to the convolution of their Fourier transforms. We know the Fourier transform of \(\rho _\infty (\mbox{$\bm {r}$})\), it is just a sum of delta functions, Eq.(<a class="ref" href="#eq:fourtran1">4.23</a>). We also know that convolutions with a sum of delta functions simply creates multiple copies of the other function, so the scattering amplitude in a finite crystal will be 
+</p>
+<div id="a0000000195">
+<div class="eqnarrayid" id="a0000000196"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{5.7} F(\mbox{$\bm {k}$})=C(\mbox{$\bm {k}$}) \,  \sum _{\mbox{\scriptsize {\bf G}}} \;  S({\bm k}-\mbox{$\bm {G}$})\; , 
+\end{align}
+</script>
+</div>
+<p>
+ where \(S(\mbox{$\bm {k}$})\) is the Fourier transform of \(s(\mbox{$\bm {r}$})\). \(S(\mbox{$\bm {k}$})\) is called the <em>shape factor</em>. For a finite structure, it is not a delta function, so there can be a range of directions for the outgoing wavevector, leading to an angular broadening of the diffraction peak. 
+</p>
+<p>
+Here we will use the shape factor to look at diffraction from a two-dimensional infinite crystal, using it to reduce the third dimension to a thin layer of thickness \(t\). If the crystal lies in the \(x-y\) plane, the shape function is simply an aperture in the \(z\) direction, \(S(z)=1\) when \(|z|{\lt}t/2\). the Fourier transform of this is a sinc function in the \(k_z\) direction. This means that the points in the reciprocal lattice get broadened in \(k_z\), but not in \(k_x\) and \(k_y\). The inplane wavevector \(\mbox{$\bm {k}$}_\parallel \) still can change only by one of the two dimensional reciprocal lattice vectors, but \(k_z\) is no longer perfectly conserved. The smaller we make the thickness \(t\), the broader the sinc function becomes. In the limit \(t \rightarrow 0\), its width goes to infinity, so we can get any change in \(k_z\). It is like a ball bouncing off a hard floor – any change in the perpendicular component of momentum can occur. 
+</p>
+<p>
+For such a two-dimensional structure, the incident and outgoing wavevectors can be written 
+</p>
+<div id="a0000000197">
+<div class="eqnarrayid" id="a0000000198"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{5.8} \mbox{$\bm {k}$}_{\rm in}=\mbox{$\bm {k}$}_\parallel + k_z^{\rm in}\,  \hat{\bm z} \quad \mbox{and} \quad \mbox{$\bm {k}$}_{\rm out}=\mbox{$\bm {k}$}_\parallel +\mbox{$\bm {G}$} + k_z^{\rm out}\,  \hat{\bm z} \; . 
+\end{align}
+</script>
+</div>
+<p>
+ Here \(k_z^{\rm in}\) is the \(z\)-component of the incident wave, determined by the angle it makes with the surface of the crystal. \(k_z^{\rm out}\) can then be found by the requirement for elastic scattering \(|\mbox{$\bm {k}$}_{\rm in}|=|\mbox{$\bm {k}$}_{\rm out}|\). This extra freedom means that we are no longer restricted to a the Bragg’s law relationship between the incoming angle and wavelength. However, \(k_z^{\rm out}\) must be real, which does give a constraint, which will be in form of a maximum wavelength for diffraction with a given incident direction. For shorter wavelengths, diffraction occurs at any wavelength, as in a diffration grating. 
+</p>
+<div class="centered"> <div class="mbox" id="a0000000199" style="width: "> <img alt="\includegraphics[width=0.65\textwidth ]{./figures/grating1d.png}" src="images/img-0066.png" style="width:305.34075pt"/> </div> </div>
+<p>
+To illustrate this, let us return to a simple (but infinitely long) one dimensional diffraction grating with period \(a\). We will take the slits to be parallel to the \(y\) axis, and assume they are long enough to make diffraction in that direction negligible. 
+</p>
+<p>
+If the incident wave makes an angle \(\phi \) with the surface normal, and the outgoing wave an angle \(\theta \), we can write 
+</p>
+<div id="a0000000200">
+<div class="eqnarrayid" id="a0000000201"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{5.9} \mbox{$\bm {k}$}_{\rm out} = \frac{2\pi }{\lambda }(\sin {\theta }\,  \hat{\bm x}-\cos {\theta }\,  \hat{\bm z}) = \mbox{$\bm {k}$}_{\rm in} + \mbox{$\bm {G}$} =\frac{2\pi }{\lambda }(\sin {\phi }\,  \hat{\bm x}-\cos {\phi }\,  \hat{\bm z})+\mbox{$\bm {G}$}\; . 
+\end{align}
+</script>
+</div>
+<p>
+ In one-dimension, the reciprocal lattice vectors are simply \(\mbox{$\bm {G}$}=n \frac{2\pi }{a}\,  \hat{\bm x}\), where the integer \(n\) is the order. Thus 
+</p>
+<div id="a0000000202">
+<div class="eqnarrayid" id="a0000000203"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{5.10} \mbox{$\bm {k}$}_{\rm out} =\left(\frac{2\pi }{\lambda }\sin {\phi }+n \frac{2\pi }{a}\right)\,  \hat{\bm x}- \frac{2\pi }{\lambda } \cos {\phi }\,  \hat{\bm z}\; . 
+\end{align}
+</script>
+</div>
+<p>
+ Now, using \(|\mbox{$\bm {k}$}_{\rm in}|=|\mbox{$\bm {k}$}_{\rm out}|\) 
+</p>
+<div id="a0000000204">
+<div class="eqnarrayid" id="a0000000205"></div><script type="math/tex; mode=display">
+\begin{align}
+\tag{5.11} \sin {\theta }=\frac{k_x^{\rm out}}{|\mbox{$\bm {k}$}_{\rm out}|} =\frac{k_x^{\rm out}}{|\mbox{$\bm {k}$}_{\rm in}|} =\frac{\left(\frac{2\pi }{\lambda }\sin {\phi }+n \frac{2\pi }{a}\right)}{\frac{2\pi }{\lambda }} =\sin {\phi } + \frac{n\lambda }{a} \; . 
+\end{align}
+</script>
+</div>
+<p>
+ If we make the input angle, \(\phi =0\), as usual for a diffraction grating, this gives the familiar \(\sin {\theta }=n\lambda /a\). 
+</p>
+</section>
+</section>
+<script id="plastex-labels" type="application/json">{"eq:convolve": {"ref": "2.1", "url": "#eq:convolve"}, "eq:planesep2d": {"ref": "3.3", "url": "#eq:planesep2d"}, "eq:3dplanesep": {"ref": "3.7", "url": "#eq:3dplanesep"}, "eq:bragg": {"ref": "3.8", "url": "#eq:bragg"}, "eq:four-series": {"ref": "4.7", "url": "#eq:four-series"}, "eq:fourier-coeff": {"ref": "4.8", "url": "#eq:fourier-coeff"}, "eq:unitcell": {"ref": "4.17", "url": "#eq:unitcell"}, "eq:fourtran": {"ref": "4.18", "url": "#eq:fourtran"}, "eq:gvectors1": {"ref": "4.19", "url": "#eq:gvectors1"}, "eq:rl-cuboid": {"ref": "4.20", "url": "#eq:rl-cuboid"}, "eq:fourier-basis": {"ref": "4.22", "url": "#eq:fourier-basis"}, "eq:fourtran1": {"ref": "4.23", "url": "#eq:fourtran1"}, "eq:scattering": {"ref": "4.24", "url": "#eq:scattering"}, "eq:rlvs": {"ref": "4.28", "url": "#eq:rlvs"}, "eq:dotprod": {"ref": "4.29", "url": "#eq:dotprod"}, "eq:prlv-condition": {"ref": "4.31", "url": "#eq:prlv-condition"}, "eq:prlvs": {"ref": "4.32", "url": "#eq:prlvs"}, "eq:prlvs-2d": {"ref": "4.39", "url": "#eq:prlvs-2d"}, "eq:planesep": {"ref": "4.49", "url": "#eq:planesep"}, "eq:diffg": {"ref": "4.50", "url": "#eq:diffg"}, "eq:diffcon": {"ref": "4.52", "url": "#eq:diffcon"}, "eq:g-first-order": {"ref": "4.57", "url": "#eq:g-first-order"}, "eq:outgoing": {"ref": "4.60", "url": "#eq:outgoing"}}</script>
+    </article>
+
+        </main>
+
+		
+		<footer>
+	<hr>
+
+    <nav id="footer-nav">
+        <a href="#">Back to top</a>
+    </nav>
+
+    <div id="footer-text">
+        <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.2.1, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
+        <p>This page last generated: 2025-02-13</p>
+        
+        
+        
+    </div>
+</footer>
+		
+
+        
+
+        <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:var(--bg-colour);fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:var(--bg-colour);fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:var(--bg-colour);stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+    </body>
+</html>
